@@ -1,0 +1,40 @@
+﻿<Window x:Class="FTU.Monitor.View.ManageUsers.SuperAdministratorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                Title="用户管理" Height="300" Width="500"
+        DataContext="{Binding Source={StaticResource Locator}, Path=SuperAdministrator}"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closed="window_closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Content="新增用户" Margin="10,2,10,2" Command="{Binding SuperAdministratorCmd}" CommandParameter="AddNewUserInfo"></Button>
+            <Button Grid.Column="1" Content="修改用户" Margin="10,2,10,2" Command="{Binding SuperAdministratorCmd}" CommandParameter="ChangeUserInfo"></Button>
+            <Button Grid.Column="2" Content="删除用户" Margin="10,2,10,2" Command="{Binding SuperAdministratorCmd}" CommandParameter="DeleteUserInfo"></Button>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,5,0,0">
+            <DataGrid ItemsSource="{Binding AllUserInformation}"  SelectedIndex="{Binding UserGridIndex}" AutoGenerateColumns="False"  CanUserAddRows="False" CanUserSortColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="序号" MinWidth="40" Binding="{Binding SerialNumber}" IsReadOnly="True"></DataGridTextColumn>
+                    <DataGridTextColumn Header="用户名" MinWidth="80" Binding="{Binding UserName}" IsReadOnly="True"></DataGridTextColumn>
+                    <DataGridTextColumn Header="角色" MinWidth="80" Binding="{Binding RoleName}" IsReadOnly="True"></DataGridTextColumn>
+                    <DataGridTextColumn Header="用户密码" MinWidth="80" Binding="{Binding Password}" IsReadOnly="True"></DataGridTextColumn>
+                    <DataGridTextColumn Header="联系方式" MinWidth="80" Binding="{Binding TelephoneNumber}" IsReadOnly="True"></DataGridTextColumn>
+                    <DataGridTextColumn Header="备注" MinWidth="80" Binding="{Binding Remark}" IsReadOnly="True"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfTelesignalisation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Telesignalisation>
+    <Selected>false</Selected>
+    <Number>1</Number>
+    <ID>1</ID>
+    <Name>开关分位</Name>
+    <Value>0</Value>
+    <Comment>开入量</Comment>
+  </Telesignalisation>
+  <Telesignalisation>
+    <Selected>false</Selected>
+    <Number>3</Number>
+    <ID>3</ID>
+    <Name>储能</Name>
+    <Value>0</Value>
+    <Comment>开入量</Comment>
+  </Telesignalisation>
+  <Telesignalisation>
+    <Selected>false</Selected>
+    <Number>4</Number>
+    <ID>4</ID>
+    <Name>气压低</Name>
+    <Value>0</Value>
+    <Comment>开入量</Comment>
+  </Telesignalisation>
+</ArrayOfTelesignalisation>

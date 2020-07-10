@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\professional\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\bin\Debug\FTU.Monitor.exe">
+   <Modules>
+    <Module Name="ftu.monitor.exe">
+     <Namespaces>
+      <Namespace Name="FTU.Monitor.DataService">
+       <Types>
+        <Type Name="RedefineSocket" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">在 'RedefineSocket' 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: 'Socket'。如果以前提供过 'RedefineSocket'，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="FTU.Monitor.Service">
+       <Types>
+        <Type Name="ConfigManageService" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SaveUsedPointToDB(System.Collections.Generic.IList`1&lt;FTU.Monitor.Model.Telemetering&gt;,System.Collections.Generic.IList`1&lt;FTU.Monitor.Model.Telesignalisation&gt;,System.Collections.Generic.IList`1&lt;FTU.Monitor.Model.Telecontrol&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Service" File="ConfigManageService.cs" Line="86">'ConfigManageService.SaveUsedPointToDB(IList&lt;Telemetering&gt;, IList&lt;Telesignalisation&gt;, IList&lt;Telecontrol&gt;)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ManagePointTableService" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BatchInsertToDB(System.Collections.Generic.IList`1&lt;FTU.Monitor.Model.PointTypeInfo&gt;,System.Collections.Generic.IList`1&lt;FTU.Monitor.Model.DevPoint&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Service" File="ManagePointTableService.cs" Line="216">'ManagePointTableService.BatchInsertToDB(IList&lt;PointTypeInfo&gt;, IList&lt;DevPoint&gt;)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ParameterManageService" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ImportParameterData(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Service" File="ParameterManageService.cs" Line="67">'ParameterManageService.ImportParameterData(string)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="FTU.Monitor.Util">
+       <Types>
+        <Type Name="DBHelperSQLite" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PrepareCommand(System.Data.SQLite.SQLiteCommand,System.Data.SQLite.SQLiteConnection,System.Data.SQLite.SQLiteTransaction,System.String,System.Data.SQLite.SQLiteParameter[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Util" File="DBHelperSQLite.cs" Line="311">传递给 'DBHelperSQLite.PrepareCommand(SQLiteCommand, SQLiteConnection, SQLiteTransaction, string, SQLiteParameter[])' 中的 'SQLiteCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'cmdText'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EncryptAndDecodeUtil" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AESDecrypt(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Util" File="EncryptAndDecodeUtil.cs" Line="134">可以在方法 'EncryptAndDecodeUtil.AESDecrypt(string)' 中多次释放对象 'mStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 134</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AESDecryptOld(System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Util" File="EncryptAndDecodeUtil.cs" Line="241">可以在方法 'EncryptAndDecodeUtil.AESDecryptOld(byte[])' 中多次释放对象 'ms'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 241</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AESEncrypt(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Util" File="EncryptAndDecodeUtil.cs" Line="76">可以在方法 'EncryptAndDecodeUtil.AESEncrypt(string)' 中多次释放对象 'mStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 76</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AESEncryptOld(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Util" File="EncryptAndDecodeUtil.cs" Line="217">可以在方法 'EncryptAndDecodeUtil.AESEncryptOld(string)' 中多次释放对象 'ms'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 217</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReportUtil" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetExcelSheetData(System.Collections.Generic.IList`1&lt;System.String&gt;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Util" File="ReportUtil.cs" Line="315">传递给 'ReportUtil.GetExcelSheetData(IList&lt;string&gt;)' 中的 'OleDbDataAdapter.OleDbDataAdapter(string, string)' 的查询字符串可能包含以下变量 'sheetNames.GetEnumerator().Current', ''#''。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetExcelSheetData(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Util" File="ReportUtil.cs" Line="221">传递给 'ReportUtil.GetExcelSheetData(string)' 中的 'OleDbCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'sqlExcel'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="FTU.Monitor.ViewModel">
+       <Types>
+        <Type Name="CommunicationViewModel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="callFiexedParameterFor101" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\ViewModel" File="CommunicationViewModel.cs" Line="1595">'CommunicationViewModel' 包含 IDisposable 类型的字段 'CommunicationViewModel.callFiexedParameterFor101': 'Timer'。请更改 'CommunicationViewModel' 的 Dispose 方法，使其针对该字段调用 Dispose 或 Close。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ConfigViewModel" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#getStruct(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\ViewModel" File="ConfigViewModel.cs" Line="1717">可以在方法 'ConfigViewModel.getStruct(string)' 中多次释放对象 'fs'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 1717</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DTUConfigureViewModel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\ViewModel" File="DTUConfigureViewModel.cs" Line="59">'DTUConfigureViewModel.DTUConfigureViewModel()' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;DTUConfigureViewModel..ctor()&#xD;&#xA;DTUConfigureViewModel.set_DTUConfigureTable(ObservableCollection&lt;Node&gt;):Void&#xD;&#xA;ObservableObject.RaisePropertyChanged&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;):Void。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ParameterViewModel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\ViewModel" File="ParameterViewModel.cs" Line="1016">'ParameterViewModel.ParameterViewModel()' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;ParameterViewModel..ctor()&#xD;&#xA;ParameterViewModel.set_ParameterAreaData(ObservableCollection&lt;Int32&gt;):Void&#xD;&#xA;ObservableObject.RaisePropertyChanged&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;):Void。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReadmeViewModel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\ViewModel" File="ReadmeViewModel.cs" Line="21">'ReadmeViewModel.ReadmeViewModel()' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;ReadmeViewModel..ctor()&#xD;&#xA;ReadmeViewModel.GetReadmeContent():Void&#xD;&#xA;ReadmeViewModel.set_ReadmeContent(String):Void&#xD;&#xA;ObservableObject.RaisePropertyChanged&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;):Void。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetReadmeContent()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\ViewModel" File="ReadmeViewModel.cs" Line="67">可以在方法 'ReadmeViewModel.GetReadmeContent()' 中多次释放对象 'fs'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 67</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="FTU.Monitor.ViewModel.ManageUsers">
+       <Types>
+        <Type Name="OneUserInfoViewModel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\ViewModel\ManageUsers" File="OneUserInfoViewModel.cs" Line="24">'OneUserInfoViewModel.OneUserInfoViewModel()' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;OneUserInfoViewModel..ctor()&#xD;&#xA;OneUserInfoViewModel.set_OneUserInfo(UserRoleMapModel):Void&#xD;&#xA;ObservableObject.RaisePropertyChanged&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt;):Void。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="lib60870">
+       <Types>
+        <Type Name="Connection" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">在 'Connection' 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: 'Timer'。如果以前提供过 'Connection'，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="CP56Time2a" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2019-05-24 02:19:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\FTU.Monitor\FTU.Monitor\Lib60870" File="CP56Time2a.cs" Line="12">'CP56Time2a.CP56Time2a(DateTime)' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;CP56Time2a..ctor(DateTime)&#xD;&#xA;CP56Time2a.set_Year(Int32):Void&#xD;&#xA;ObservableObject.RaisePropertyChanged(String):Void。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213">
+   <Name>应释放可释放的字段</Name>
+   <Description>如果实现了 IDisposable 的类型拥有同样实现 IDisposable 的字段，则封装类型的 Dispose() 实现应对每个可释放字段调用 Dispose()。</Description>
+   <Resolution Name="Default">{0} 包含 IDisposable 类型的字段 {1}: {2}。请更改 {0} 的 Dispose 方法，使其针对该字段调用 Dispose 或 Close。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182328.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>不要在构造函数中调用可重写的方法</Name>
+   <Description>不应通过构造函数调用类中定义的虚方法。如果某个派生类已重写该虚方法，则将在调用派生类的构造函数前，调用此派生类重写后的方法。</Description>
+   <Resolution Name="Default">{0} 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: {1}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>再次引发以保留堆栈详细信息</Name>
+   <Description>重复引发捕获的异常时，请使用 IL 再次引发指令保留原始堆栈详细信息。</Description>
+   <Resolution Name="Default">{0} 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>具有可释放字段的类型应该是可释放的</Name>
+   <Description>声明可释放成员的类型也应实现 IDisposable。如果该类型没有任何非托管资源，请不要在其上实现终结器。</Description>
+   <Resolution Name="DependsOnFix">在 {0} 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: {1}。如果以前提供过 {0}，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 241</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>检查 SQL 查询是否存在安全漏洞</Name>
+   <Description>通过用户输入生成的 SQL 命令字符串容易受到 SQL 注入式攻击。Microsoft SQL Server 和其他数据库服务器支持存储过程和参数化 SQL 查询，这将降低受到注入式攻击的风险。</Description>
+   <Resolution Name="WithNonLiterals">传递给 {1} 中的 {0} 的查询字符串可能包含以下变量 {2}。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

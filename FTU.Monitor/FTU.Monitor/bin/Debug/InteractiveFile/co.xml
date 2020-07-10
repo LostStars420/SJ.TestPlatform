@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFile>
+	<Header fileType="CO" fileVer="1.00" devName="SHFD2000" 	/>
+		<DataRec num="0019">
+	<DI ioa="24585" tm="181022_144605_032" cmd="oper   success" val="0"	/>
+		<DI ioa="24585" tm="181022_144606_048" cmd="oper   success" val="1"	/>
+		<DI ioa="24585" tm="181022_144606_573" cmd="oper   success" val="0"	/>
+		<DI ioa="24585" tm="181022_144616_574" cmd="oper   fail   " val="1"	/>
+		<DI ioa="24577" tm="181030_070954_627" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="181030_071306_993" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="181030_071546_219" cmd="select fail   " val="1"	/>
+		<DI ioa="24578" tm="190301_093733_980" cmd="oper   success" val="0"	/>
+		<DI ioa="24578" tm="190313_203037_567" cmd="oper   success" val="0"	/>
+		<DI ioa="24578" tm="190313_203327_407" cmd="oper   success" val="0"	/>
+		<DI ioa="24578" tm="190313_203446_555" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190401_133802_340" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="190401_133816_660" cmd="select fail   " val="0"	/>
+		<DI ioa="24581" tm="190401_133838_769" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="190401_135625_896" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="190401_140809_991" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="190401_140821_441" cmd="select fail   " val="1"	/>
+		<DI ioa="24577" tm="190401_140828_030" cmd="select fail   " val="1"	/>
+		<DI ioa="24577" tm="190401_140832_440" cmd="select fail   " val="0"	/>
+	</DataRec>
+</DataFile>

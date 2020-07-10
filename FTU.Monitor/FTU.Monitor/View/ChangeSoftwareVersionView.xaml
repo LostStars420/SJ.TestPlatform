@@ -1,0 +1,24 @@
+﻿<Window x:Class="FTU.Monitor.View.ChangeSoftwareVersionView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="修改终端软件版本" Height="160" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Margin="3">输入终端软件新版本号：</Label>
+            <TextBox Margin="3" Name="FirstNewVersionInput" Width="120" Text="{Binding FirstNewVersion}"></TextBox>
+        </DockPanel>
+        <DockPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Margin="3">确定终端软件新版本号：</Label>
+            <TextBox  Margin="3" Name="SecondNewVersionInput" Width="120" Text="{Binding SecondNewVersion}"></TextBox>
+        </DockPanel>
+        <DockPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="ConfirmButton" Content="确定" Height="25"  Width="75" Command="{Binding ChangeSoftwareVersionCommand}" CommandParameter="Confirm" Click="ConfirmButton_Click"/>
+            <Button x:Name="CancelButton" Content="取消" Height="25"  Width="75" Command="{Binding ChangeSoftwareVersionCommand}" CommandParameter="Cancel" Margin="20,0,0,0" Click="CancelButton_Click"/>
+        </DockPanel>
+    </Grid>
+</Window>

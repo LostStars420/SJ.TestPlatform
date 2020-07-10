@@ -1,0 +1,41 @@
+﻿<Window x:Class="FTU.Monitor.View.AboutView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="关于" Height="320" Width="500"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="AboutFormClosing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <DockPanel>
+                <Label FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="本软件最终解释权属"/>
+                <Label FontSize="16" Foreground ="Red" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="北京双杰智远电力技术有限公司"/>
+                <Label FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Content="所有"/>
+            </DockPanel>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Label Content="单位：北京双杰智远电力技术有限公司"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Label Content="电话：86-010-61635115"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Label Content="传真：86-010-61635115-6010 "/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1">
+            <Label Content="邮箱：zidonghua@sojoline.com  "/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Label Content="地址：北京市怀柔区雁栖经济开发区C区乐园南一街5号 "/>
+        </Grid>
+    </Grid>
+</Window>

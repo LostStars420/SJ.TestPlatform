@@ -1,0 +1,6 @@
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.Common\bin\Debug\Sojo.TestPlatform.Common.dll
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.Common\bin\Debug\Sojo.TestPlatform.Common.pdb
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.Common\obj\Debug\Sojo.TestPlatform.Common.csprojAssemblyReference.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.Common\obj\Debug\Sojo.TestPlatform.Common.csproj.CoreCompileInputs.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.Common\obj\Debug\Sojo.TestPlatform.Common.dll
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.Common\obj\Debug\Sojo.TestPlatform.Common.pdb

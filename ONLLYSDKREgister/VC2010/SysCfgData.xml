@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Params>
+<Para id="OnllySystemSet">
+<Para id="D_IRANGE" value="40.000"/>
+<Para id="D_URANGE" value="130.000"/>
+<Para id="Fdef" value="50.000"/>
+<Para id="Fre" value="50.000"/>
+<Para id="I0">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I1">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I10">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="65536"/>
+</Para>
+<Para id="I11">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="65536"/>
+</Para>
+<Para id="I12">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I13">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I14">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I15">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I2">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I3">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I4">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I5">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I6">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I7">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I8">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="I9">
+<Para id="IsVolt" value="0"/>
+<Para id="Primary" value="1000.000"/>
+<Para id="Secondary" value="1.000"/>
+<Para id="SignalType" value="65536"/>
+</Para>
+<Para id="Idef" value="1.000"/>
+<Para id="M_I1_0" value="1000.000"/>
+<Para id="M_I1_1" value="1000.000"/>
+<Para id="M_I1_10" value="1000.000"/>
+<Para id="M_I1_11" value="1000.000"/>
+<Para id="M_I1_12" value="1000.000"/>
+<Para id="M_I1_13" value="1000.000"/>
+<Para id="M_I1_14" value="1000.000"/>
+<Para id="M_I1_15" value="1000.000"/>
+<Para id="M_I1_2" value="1000.000"/>
+<Para id="M_I1_3" value="1000.000"/>
+<Para id="M_I1_4" value="1000.000"/>
+<Para id="M_I1_5" value="1000.000"/>
+<Para id="M_I1_6" value="1000.000"/>
+<Para id="M_I1_7" value="1000.000"/>
+<Para id="M_I1_8" value="1000.000"/>
+<Para id="M_I1_9" value="1000.000"/>
+<Para id="M_I2_0" value="1.000"/>
+<Para id="M_I2_1" value="1.000"/>
+<Para id="M_I2_10" value="1.000"/>
+<Para id="M_I2_11" value="1.000"/>
+<Para id="M_I2_12" value="1.000"/>
+<Para id="M_I2_13" value="1.000"/>
+<Para id="M_I2_14" value="1.000"/>
+<Para id="M_I2_15" value="1.000"/>
+<Para id="M_I2_2" value="1.000"/>
+<Para id="M_I2_3" value="1.000"/>
+<Para id="M_I2_4" value="1.000"/>
+<Para id="M_I2_5" value="1.000"/>
+<Para id="M_I2_6" value="1.000"/>
+<Para id="M_I2_7" value="1.000"/>
+<Para id="M_I2_8" value="1.000"/>
+<Para id="M_I2_9" value="1.000"/>
+<Para id="M_U1_0" value="1000.000"/>
+<Para id="M_U1_1" value="1000.000"/>
+<Para id="M_U1_10" value="1000.000"/>
+<Para id="M_U1_11" value="1000.000"/>
+<Para id="M_U1_12" value="1000.000"/>
+<Para id="M_U1_13" value="1000.000"/>
+<Para id="M_U1_14" value="1000.000"/>
+<Para id="M_U1_15" value="1000.000"/>
+<Para id="M_U1_2" value="1000.000"/>
+<Para id="M_U1_3" value="1000.000"/>
+<Para id="M_U1_4" value="1000.000"/>
+<Para id="M_U1_5" value="1000.000"/>
+<Para id="M_U1_6" value="1000.000"/>
+<Para id="M_U1_7" value="1000.000"/>
+<Para id="M_U1_8" value="1000.000"/>
+<Para id="M_U1_9" value="1000.000"/>
+<Para id="M_U2_0" value="1.000"/>
+<Para id="M_U2_1" value="1.000"/>
+<Para id="M_U2_10" value="1.000"/>
+<Para id="M_U2_11" value="1.000"/>
+<Para id="M_U2_12" value="1.000"/>
+<Para id="M_U2_13" value="1.000"/>
+<Para id="M_U2_14" value="1.000"/>
+<Para id="M_U2_15" value="1.000"/>
+<Para id="M_U2_2" value="1.000"/>
+<Para id="M_U2_3" value="1.000"/>
+<Para id="M_U2_4" value="1.000"/>
+<Para id="M_U2_5" value="1.000"/>
+<Para id="M_U2_6" value="1.000"/>
+<Para id="M_U2_7" value="1.000"/>
+<Para id="M_U2_8" value="1.000"/>
+<Para id="M_U2_9" value="1.000"/>
+<Para id="TimeSysCfg">
+<Para id="InnerSynMode" value="1"/>
+<Para id="InnerSynMode2" value="0"/>
+<Para id="OnllyGPSSynCfg">
+<Para id="BaudRate" value="9600"/>
+<Para id="DataBits" value="8"/>
+<Para id="Parity" value="0"/>
+<Para id="StopBits" value="1"/>
+<Para id="nComNo" value="1"/>
+</Para>
+<Para id="SynPos" value="0"/>
+</Para>
+<Para id="U0">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U1">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U10">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="65536"/>
+</Para>
+<Para id="U11">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="65536"/>
+</Para>
+<Para id="U12">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U13">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U14">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U15">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U2">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U3">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U4">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U5">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U6">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U7">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U8">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="196609"/>
+</Para>
+<Para id="U9">
+<Para id="IsVolt" value="1"/>
+<Para id="Primary" value="100.000"/>
+<Para id="Secondary" value="100.000"/>
+<Para id="SignalType" value="65536"/>
+</Para>
+<Para id="Vdef" value="57.735"/>
+<Para id="bShowPrimary" value="0"/>
+<Para id="bStop61850" value="0"/>
+</Para>
+</Params>

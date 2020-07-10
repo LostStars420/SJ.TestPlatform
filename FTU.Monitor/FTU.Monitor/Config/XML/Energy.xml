@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NewDataSet>
+	<EnergyPoint>
+		<Number>1</Number>
+		<ID>6401</ID>
+		<Name>1回路 当前正向有功电能示值</Name>
+		<Unit>kWh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>
+	<EnergyPoint>
+		<Number>2</Number>
+		<ID>6402</ID>
+		<Name>1回路 当前正向无功电能示值</Name>
+		<Unit>kvarh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>
+	<EnergyPoint>
+		<Number>3</Number>
+		<ID>6403</ID>
+		<Name>1回路 当前一象限无功电能示值</Name>
+		<Unit>kvarh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>
+	<EnergyPoint>
+		<Number>4</Number>
+		<ID>6404</ID>
+		<Name>1回路 当前四象限无功电能示值</Name>
+		<Unit>kvarh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>
+	<EnergyPoint>
+		<Number>5</Number>
+		<ID>6405</ID>
+		<Name>1回路 当前反向有功电能示值</Name>
+		<Unit>kWh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>
+	<EnergyPoint>
+		<Number>6</Number>
+		<ID>6406</ID>
+		<Name>1回路 当前反向无功电能示值</Name>
+		<Unit>kvarh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>
+	<EnergyPoint>
+		<Number>7</Number>
+		<ID>6407</ID>
+		<Name>1回路 当前二象限无功电能示值</Name>
+		<Unit>kvarh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>
+	<EnergyPoint>
+		<Number>8</Number>
+		<ID>6408</ID>
+		<Name>1回路 当前三象限无功电能示值</Name>
+		<Unit>kvarh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>
+	<EnergyPoint>
+		<Number>9</Number>
+		<ID>6409</ID>
+		<Name>1回路 当前三象限无功电能示值</Name>
+		<Unit>kvarh</Unit>
+		<Value>0</Value>
+		<Rate>0</Rate>
+	</EnergyPoint>	
+</NewDataSet>

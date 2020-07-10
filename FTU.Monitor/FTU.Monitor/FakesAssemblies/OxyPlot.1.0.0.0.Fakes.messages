@@ -1,0 +1,300 @@
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxySizeExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotCommands 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ControllerExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LibraryDoc 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.NamespaceDoc 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotLength 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotLengthUnit 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CodeGeneratorStringExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.DataPoint 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.MarkerType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyColorExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyPalettes 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ScreenVector 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ScreenPointHelper 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CanonicalSplineHelper 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.FontWeights 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyThickness 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ScreenPoint 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyRect 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxySize 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.SutherlandHodgmanClipping 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LineJoin 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.HorizontalAlignment 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.VerticalAlignment 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyColor 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyColors 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LineStyleHelper 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LineStyle 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.MathRenderingExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.RenderingExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyKey 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyModifierKeys 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyMouseButton 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PageSize 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PageOrientation 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LineCap 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ColorSpace 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.FontEncoding 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.FontSubType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PortableDocumentExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PdfWriter 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PortableDocumentImageUtilities 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.StandardFonts 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ArrayExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ComparerHelper 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.HashCodeBuilder 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.BinaryReaderExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.StreamExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.StringHelper 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.FractionHelper 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ArrayBuilder 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Conrec 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ImageFormat 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ColorType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CompressionMethod 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.FilterMethod 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.InterlaceMethod 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Arrays 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CanonicalCode 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CircularDictionary 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CodeTree 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Deflate 生成存根: 类型没有系列可见的构造函数。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.InternalNode 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Leaf 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Node 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.SelectionMode 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CursorType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendPlacement 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendPosition 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendOrientation 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendItemOrder 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendSymbolPlacement 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.TitleHorizontalAlignment 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.BarSeriesBase`1 生成存根: method System.Double OxyPlot.Series.CategorizedSeries.GetBarWidth() unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(OxyPlot.1.0.0.0.Fakes) or subtype(BarSeriesBase`1 in assembly OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.CategorizedSeries 生成存根: method System.Double OxyPlot.Series.CategorizedSeries.GetBarWidth() unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(OxyPlot.1.0.0.0.Fakes) or subtype(CategorizedSeries in assembly OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ErrorColumnSeries 生成存根: method System.Double OxyPlot.Series.CategorizedSeries.GetBarWidth() unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(OxyPlot.1.0.0.0.Fakes) or subtype(ErrorColumnSeries in assembly OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.HeatMapCoordinateDefinition 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.HeatMapRenderMethod 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.LineLegendPosition 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.NamespaceDoc 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.LabelPlacement 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ColumnSeries 生成存根: method System.Double OxyPlot.Series.CategorizedSeries.GetBarWidth() unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(OxyPlot.1.0.0.0.Fakes) or subtype(ColumnSeries in assembly OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.BarSeries 生成存根: method System.Double OxyPlot.Series.CategorizedSeries.GetBarWidth() unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(OxyPlot.1.0.0.0.Fakes) or subtype(BarSeries in assembly OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.BarSeriesBase 生成存根: method System.Double OxyPlot.Series.CategorizedSeries.GetBarWidth() unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(OxyPlot.1.0.0.0.Fakes) or subtype(BarSeriesBase in assembly OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.IntervalBarSeries 生成存根: method System.Double OxyPlot.Series.CategorizedSeries.GetBarWidth() unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(OxyPlot.1.0.0.0.Fakes) or subtype(IntervalBarSeries in assembly OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.TornadoBarSeries 生成存根: method System.Double OxyPlot.Series.CategorizedSeries.GetBarWidth() unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(OxyPlot.1.0.0.0.Fakes) or subtype(TornadoBarSeries in assembly OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.VolumeStyle 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.OldCandleStickSeries 生成存根: 类型已过时。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.PlotModelExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.NamespaceDoc 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.WikiReportWriter 生成存根: method System.Text.Encoding System.IO.TextWriter.get_Encoding() unstubbable: 方法是抽象的，因此无法用作存根。原因: 类型 System.Text.Encoding 在目标框架版本中不可用。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.HtmlPlotElementType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.StringExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.TextReportWriter 生成存根: method System.Text.Encoding System.IO.TextWriter.get_Encoding() unstubbable: 方法是抽象的，因此无法用作存根。原因: 类型 System.Text.Encoding 在目标框架版本中不可用。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.Alignment 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.AxisUtilities 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.NamespaceDoc 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.AxisChangeTypes 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.AxisLayer 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.AxisPosition 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.ColorAxisExtensions 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.DateTimeIntervalType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.TickStyle 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.NamespaceDoc 生成存根: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.LineAnnotationType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.AnnotationLayer 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.AnnotationTextOrientation 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.FunctionAnnotationType 生成存根: 类型是一个值类型。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 <PrivateImplementationDetails> 生成存根: 类型已密封。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.DelegatePlotCommand`1+<>c__DisplayClass0_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Model+<HitTest>d__9 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IController 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IViewCommand 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IViewCommand`1 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IView 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IPlotController 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IPlotElement 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IPlotModel 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxySizeExtensions+<>c__DisplayClass0_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxySizeExtensions+<>c__DisplayClass1_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxySizeExtensions+<GetPolygon>d__1 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotCommands+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LibraryDoc 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.NamespaceDoc 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotLengthUnit 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CodeGenerator+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ICodeGenerating 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IDataPointProvider 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.MarkerType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyColorExtensions+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyColorExtensions+<>c__DisplayClass7_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CanonicalSplineHelper 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.SutherlandHodgmanClipping+RectangleEdge 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LineJoin 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.HorizontalAlignment 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.VerticalAlignment 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LineStyle 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.MathRenderingExtensions+<>c__DisplayClass20_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.RenderingExtensions+<>c__DisplayClass26_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.RenderingExtensions+<>c__DisplayClass3_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IRenderContext 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.XkcdRenderingDecorator+<Interpolate>d__32 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyKey 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyModifierKeys 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.OxyMouseButton 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PageSize 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PageOrientation 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LineCap 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ColorSpace 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.FontEncoding 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.FontSubType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PdfRenderContext+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PdfWriter 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PortableDocument+<>c__DisplayClass54_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PortableDocument+<>c__DisplayClass55_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PortableDocument+<>c__DisplayClass75_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PortableDocument+<>c__DisplayClass84_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PortableDocument+PortableDocumentObject 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IExporter 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ComparerHelper+ComparisonComparer`1 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.HashCodeBuilder+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ListBuilder`1+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ListBuilder`1+<>c__DisplayClass4_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.StringHelper+<>c__DisplayClass1_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.StringHelper+<Format>d__3 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Conrec+<>c__DisplayClass1_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Conrec+RendererDelegate 生成填充码: 类型是一个委托。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ImageFormat 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IImageDecoder 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IImageEncoder 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ColorType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CompressionMethod 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.FilterMethod 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.InterlaceMethod 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PngEncoder+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PngEncoder+MemoryWriter 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CanonicalCode 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CircularDictionary 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CodeTree 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.InternalNode 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Leaf 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Node 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ControllerBase+<>c__DisplayClass37_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ControllerBase+<>c__DisplayClass38_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ControllerBase+<>c__DisplayClass40_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.ControllerBase+<>c__DisplayClass41_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Selection+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Selection+<>c__DisplayClass6_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.SelectionMode 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.IPlotView 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.CursorType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotElement+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotModel+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotModel+<>c__DisplayClass12_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotModel+<>c__DisplayClass13_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotModel+<>c__DisplayClass15_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotModel+<>c__DisplayClass16_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotModel+<>c__DisplayClass334_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotModel+<>c__DisplayClass5_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotModel+<GetHitTestElements>d__340 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.PlotType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendPlacement 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendPosition 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendOrientation 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendItemOrder 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.LegendSymbolPlacement 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.TitleHorizontalAlignment 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.LinearBarSeries+<>c__DisplayClass36_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.LinearBarSeries+BarColors 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.IScatterPointProvider 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ScatterErrorSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ErrorColumnSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ErrorColumnSeries+<>c__DisplayClass10_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ErrorColumnSeries+<>c__DisplayClass10_1 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.IStackableSeries 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.BoxPlotSeries+<>c__DisplayClass80_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.HeatMapCoordinateDefinition 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.HeatMapRenderMethod 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.LineLegendPosition 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.NamespaceDoc 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.AreaSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.AreaSeries+<GetConstantPoints2>d__52 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.AreaSeries+AreaRenderContext 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.LabelPlacement 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ContourSeries+Contour 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ContourSeries+ContourLabel 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ContourSeries+ContourSegment 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ColumnSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.BarSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.BarSeriesBase+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.BarSeriesBase+<>c__DisplayClass71_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.BarSeriesBase+<>c__DisplayClass71_1 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.RectangleBarSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.IntervalBarSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.TornadoBarSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ItemsSeries+<>c__DisplayClass5_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.DataPointSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.StairStepSeries+<>c__DisplayClass10_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.ScatterSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.TwoColorAreaSeries+TwoColorAreaRenderContext 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.PieSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.LineSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.LineSeries+Segment 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.CandleStickAndVolumeSeries+<>c__DisplayClass82_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.VolumeSeries+<>c__DisplayClass68_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.VolumeStyle 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.CandleStickSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.CandleStickSeries+<>c__DisplayClass17_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.OldCandleStickSeries 生成填充码: 类型已过时。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.HighLowSeries+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Series.HighLowSeries+<>c__DisplayClass56_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.NamespaceDoc 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.HtmlPlotElementType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.IReportWriter 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.ItemsTable+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.DrawingFigure+DrawingFormat 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.PropertyTable+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.ReportItem+FigureCounter 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Reporting.Alignment 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.NamespaceDoc 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.LogarithmicAxis+<>c__DisplayClass24_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.LogarithmicAxis+<>c__DisplayClass25_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.RangeColorAxis+<>c__DisplayClass18_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.RangeColorAxis+<>c__DisplayClass18_1 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.RangeColorAxis+ColorRange 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.Axis+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.Axis+<>c__DisplayClass378_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.AxisChangeTypes 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.AxisLayer 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.AxisPosition 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c__DisplayClass61_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c__DisplayClass61_1 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c__DisplayClass61_2 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c__DisplayClass61_3 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c__DisplayClass61_4 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c__DisplayClass61_5 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c__DisplayClass61_6 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryAxis+<>c__DisplayClass61_7 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryColorAxis+<>c__DisplayClass11_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.CategoryColorAxis+<>c__DisplayClass11_1 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.IColorAxis 生成填充码: 类型是一个接口。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.LinearColorAxis+<>c__DisplayClass25_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.LinearColorAxis+<>c__DisplayClass25_1 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.LinearColorAxis+<GetColors>d__23 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.DateTimeAxis+<>c__DisplayClass36_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.DateTimeIntervalType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.TickStyle 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.TimeSpanAxis+<>c__DisplayClass5_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.AngleAxisRenderer+<>c__DisplayClass1_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.MagnitudeAxisRenderer+<>c__DisplayClass1_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Axes.HorizontalAndVerticalAxisRenderer+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.NamespaceDoc 生成填充码: 类型对 exported or assembly(OxyPlot.1.0.0.0.Fakes) 不可见。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.LineAnnotationType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.AnnotationLayer 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.AnnotationTextOrientation 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.FunctionAnnotationType 生成填充码: 类型是一个枚举。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 OxyPlot.Annotations.PathAnnotation+<>c__DisplayClass82_0 生成填充码: 类型不受支持，因为存在内部限制。
+C:\Users\Administrator\Desktop\FTU.Monitor\FTU.Monitor\Fakes\OxyPlot.fakes : warning : 无法为 <PrivateImplementationDetails> 生成填充码: 类型不受支持，因为存在内部限制。

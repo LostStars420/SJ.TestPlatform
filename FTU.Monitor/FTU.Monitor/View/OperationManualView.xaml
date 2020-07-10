@@ -1,0 +1,27 @@
+﻿<Window x:Class="FTU.Monitor.View.OperationManualView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mpp="clr-namespace:MoonPdfLib;assembly=MoonPdfLib"
+        Title="操作手册" Height="350" Width="525" WindowState="Maximized" Closing="OperationManualFormClosing" Loaded="OpenPDFFile">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="#f0f0f0">
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                <Button Content="放大" Width="50" Click="ZoomInButton_Click" Margin="0,5"/>
+                <Button Content="缩小" Width="50" Click="ZoomOutButton_Click" Margin="5,5"/>
+                <Button Content="100%" Width="50" Click="NormalButton_Click" Margin="0,5"/>
+                <Button Content="整页" Width="50" Click="FitToHeightButton_Click" Margin="5,5"/>
+                <Button Content="单页" Width="50" Click="SinglePageButton_Click" Margin="0,5"/>
+                <Button Content="双页" Width="50" Click="FacingButton_Click" Margin="5,5"/>
+            </StackPanel>
+        </Border>
+
+        <Border Background="#d3d3d3" Grid.Row="1">
+            <mpp:MoonPdfPanel x:Name="moonPdfPanel" Background="LightGray" ViewType="SinglePage" PageRowDisplay="ContinuousPageRows" PageMargin="0,2,4,2" AllowDrop="True"/>
+        </Border>
+    </Grid>
+</Window>

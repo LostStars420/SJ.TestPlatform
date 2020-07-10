@@ -1,0 +1,150 @@
+﻿<Window x:Class="FTU.Monitor.View.FileServiceView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local ="clr-namespace:FTU.Monitor.CheckValueService"
+      mc:Ignorable="d"
+      d:DesignHeight="600" d:DesignWidth="900"
+	Title="FileServiceView">
+
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border CornerRadius="3" BorderBrush="Red" BorderThickness="1">
+                            <StackPanel Orientation="Vertical">
+                                <AdornedElementPlaceholder x:Name="Adorned"></AdornedElementPlaceholder>
+                                <TextBlock Width="{TemplateBinding Width}" Foreground="Red">
+                                    <TextBlock.Text>
+                                        <Binding ElementName="Adorned" Path="AdornedElement.(Validation.Errors)[0].ErrorContent"></Binding>
+                                    </TextBlock.Text>
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect Opacity="0.6" ShadowDepth="3" Color="Black"/>
+                                    </TextBlock.Effect>
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="120"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="召唤目录" Grid.Row="0" Margin="3" Background="AliceBlue">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Row="0">
+                    <Label Margin="3" Padding="2">目录ID:</Label>
+                    <!--<TextBox Margin="3" Padding="2" MinWidth="80" Text="{Binding DirectoryID}"></TextBox>-->
+                    <TextBox Margin="3" Padding="2" MinWidth="80" VerticalAlignment="Center">
+                        <TextBox.Text>
+                            <Binding Path="DirectoryID"
+                                 NotifyOnValidationError="True"
+                                 UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <local:NumberRangeRule Min="0" Max="2147483646"></local:NumberRangeRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <Label Margin="3" Padding="2">目录名:</Label>
+                    <TextBox Margin="3" Padding="2" MinWidth="100" Text="{Binding DirectoryName}"></TextBox>
+                    <Label Margin="3" Padding="2">起始时间:</Label>
+                    <TextBox Margin="3" Padding="2" MinWidth="120" Name="txtStartTime" Text="{Binding StartTime, StringFormat={}{0:yyyy-MM-dd HH:mm:ss.fff}}"></TextBox>
+                    <Label Margin="3" Padding="2">结束时间</Label>
+                    <TextBox Margin="3" Padding="2" MinWidth="120" Name="txtEndTime" Text="{Binding EndTime, StringFormat={}{0:yyyy-MM-dd HH:mm:ss.fff}}"></TextBox>
+                    <CheckBox  Margin="3" Padding="2" VerticalAlignment="Center" IsChecked="{Binding TimeChecked}">满足时间段</CheckBox>
+                    <CheckBox  Margin="3" Padding="2" VerticalAlignment="Center" IsChecked="{Binding DefaultChecked}">默认目录</CheckBox>
+                    <Button Margin="3,3,3,3" Padding="3" Command="{Binding FileServiceCommand}" CommandParameter="ReadDirectory">召唤目录</Button>
+                </StackPanel>
+
+                <DataGrid x:Name="dg" ItemsSource="{Binding FileData}" SelectedIndex="{Binding GridIndex}"  CurrentCell="{Binding CellInfo,Mode=TwoWay}" Grid.Row="1" AutoGenerateColumns="False"  CanUserAddRows="False" CanUserSortColumns="False" AreRowDetailsFrozen="True" LoadingRow="dg_FileServerViewLoadingRow" EnableRowVirtualization="False">
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="MinWidth" Value="85"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="LightBlue"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.CellStyle>
+
+                    <DataGrid.Columns>
+                        <DataGridCheckBoxColumn Header="选择" Width="0.3*" Binding="{Binding Selected,Mode=TwoWay}" />
+                        <DataGridTextColumn Header="目录ID" Width="0.3*" Binding="{Binding IDOfDirectory}" IsReadOnly="True" />
+                        <DataGridTextColumn Header="序号" Width="0.3*" Binding="{Binding Number}" IsReadOnly="True" />
+                        <!--<DataGridTextColumn Header="文件名" Width="{Binding Path=Text.Length,Source=Name}" Binding="{Binding Name}" IsReadOnly="True" />-->
+                        <DataGridTextColumn Header="文件名" Width="1.5*" Binding="{Binding Name}" IsReadOnly="True" />
+                        <DataGridTextColumn Header="文件大小" Width="0.8*" Binding="{Binding Size}" IsReadOnly="True" />
+                        <!--<DataGridTextColumn Header="文件时间" Width="{Binding Path=Text.Length,Source=Time}" Binding="{Binding Time}" IsReadOnly="True" />-->
+                        <DataGridTextColumn Header="文件时间" Width="*" Binding="{Binding Time}" IsReadOnly="True" />
+                        <DataGridTextColumn Header="备注" Width="*" Binding="{Binding Remark}" IsReadOnly="True" />
+
+                        <!--<DataGridTemplateColumn Header="操作" Width="100">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Command="{Binding ReadFileCommand}" CommandParameter="{Binding Name}" >读取文件</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>-->
+                    </DataGrid.Columns>
+
+                    <DataGrid.ContextMenu>
+                        <ContextMenu StaysOpen="True">
+                            <MenuItem Header="清空" Command="{Binding FileServiceCommand}" CommandParameter="Clear"></MenuItem>
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="读取文件" Grid.Row="1" Margin="3" Background="AliceBlue">
+            <StackPanel Orientation="Horizontal">
+                <!--<Label Margin="3" Padding="2">读取文件名:</Label>
+                <TextBox Margin="3" Padding="2" MinWidth="100" Text="{Binding ReadFileName}"></TextBox>-->
+                <CheckBox Margin="5,10,3,3" Content="全选" Height="25" Width="50" IsChecked="{Binding ComboxChecked}" Command="{Binding FileServiceCommand}" CommandParameter="SelectAllCommand"></CheckBox>
+                <Button Margin="30,3,3,3" MinWidth="120" Command="{Binding FileServiceCommand}" CommandParameter="ReadFile">读取文件</Button>
+                <Button Margin="30,3,3,3" MinWidth="120" Command="{Binding FileServiceCommand}" CommandParameter="OpenFolderPath">打开录波文件目录</Button>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="写文件" Grid.Row="2" Margin="3" Background="AliceBlue">
+            <StackPanel Orientation="Horizontal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Grid.Row="0">
+                        <Label Margin="3,17,3,17" Padding="2">写文件名:</Label>
+                        <TextBox Margin="5,17,3,17" Padding="2" MinWidth="100" Text="{Binding WriteFileName}"></TextBox>
+                        <Button Margin="30,17,3,17" Command="{Binding FileServiceCommand}" CommandParameter="SelectFile">选择文件</Button>
+                        <Button Margin="30,17,3,17" Command="{Binding FileServiceCommand}" CommandParameter="UpdateStart">启动升级</Button>
+                        <Button Margin="30,17,3,17" Command="{Binding FileServiceCommand}" CommandParameter="WriteFile">写文件</Button>
+                        <Button Margin="30,17,3,17" Command="{Binding FileServiceCommand}" CommandParameter="UpdateCancel">终止升级</Button>
+                        <Button Margin="30,17,3,17" Command="{Binding FileServiceCommand}" CommandParameter="UpdateOver">升级结束</Button>
+                    </StackPanel>
+                    <Grid Grid.Row="1">
+                        <ProgressBar Name="pBar" Minimum="0" Maximum="100" Margin="0,0,0,0"  Height="50" MinWidth="1000"/>
+                    </Grid>
+                </Grid>
+
+            </StackPanel>
+        </GroupBox>
+
+    </Grid>
+
+</Window>

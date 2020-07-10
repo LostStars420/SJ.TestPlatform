@@ -1,0 +1,109 @@
+﻿<Page x:Class="FTU.Monitor.View.ParameterView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"       
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+	Title="ParameterView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="110">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label Content="定值区号：" Height="25" MinWidth="20"/>
+            <Viewbox>
+                <ComboBox Margin="5"  Height="20" MinWidth="50" ItemsSource="{Binding ParameterAreaData}"  SelectedIndex="{Binding ParameterAreaSelectedIndex}"/>
+            </Viewbox>
+            
+            <Button Content="读当前定值区号" Height="20" Width="100"  Margin="5" Command="{Binding ParameterCommand}" CommandParameter="ParameterAreaRead"></Button>
+            <Button Content="切换定值区" Height="20" Width="100"  Margin="5" Command="{Binding ParameterCommand}" CommandParameter="ParameterAreaChange"></Button>
+            <Label Height="25">当前区号：</Label>
+            <TextBox DataContext="{Binding Outputdata}" Text="{Binding CurrentArea}" Height="20" Width="50" Margin="3"> </TextBox>
+            <Button Content="设置默认值" Height="20" Width="100" Margin="5" Command="{Binding ParameterCommand}" CommandParameter="SetDefaultValue"></Button>
+            <!--<Button Content="导入" Height="20" Width="50"  Margin="5" Command="{Binding ParameterCommand}" CommandParameter="ImportData"></Button>
+            <Button Content="导出" Height="20" Width="50"  Margin="5" Command="{Binding ParameterCommand}" CommandParameter="ExportData"></Button>-->
+        </StackPanel>
+        <DataGrid  Grid.Row="1" ItemsSource="{Binding ParameterData}" AutoGenerateColumns="False"  CanUserAddRows="False" CanUserSortColumns="False" EnableRowVirtualization="False">
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Enable}" Value="0">
+                            <!--<Setter Property="Foreground" Value="Gray"></Setter>-->
+                            <Setter Property="Visibility" Value="Collapsed"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Value}" Value = "1">
+                            <Setter Property="Background" Value="#FFD2F4F9"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Value}" Value = "2">
+                            <Setter Property="Background" Value="#FFD2F4F9"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>          
+            <!--<DataGrid.ContextMenu>
+                <ContextMenu Name="dgmenu" StaysOpen="True"  >
+                    <MenuItem Header="重新载入表格" CommandParameter="Reload" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+                    <MenuItem Header="保存表格到数据库"  CommandParameter="Save" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+                    <MenuItem Header="选择行之上插入新行"  CommandParameter="AddUp" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+                    <MenuItem Header="选择行之下插入新行"  CommandParameter="AddDown" Command="{Binding DataGridMenumSelected}"/>
+                    <Separator></Separator>
+                    <MenuItem Header="删除选中行"  CommandParameter="DeleteSelect" Command="{Binding DataGridMenumSelected}"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>-->
+
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="选择" Width="40" Binding="{Binding Selected,Mode=TwoWay}" />
+                <DataGridTextColumn Header="序号"     Width="40" Binding="{Binding Number}" IsReadOnly="True" />
+                <DataGridTextColumn Header="名称"     Width="120" Binding="{Binding Name}" IsReadOnly="True" />
+                <DataGridTextColumn Header="点号"     Width="60" Binding="{Binding ID}" IsReadOnly="True" />
+                <DataGridTextColumn Header="最小值"   Width="60" Binding="{Binding MinValue,StringFormat={}{0:F2}}" IsReadOnly="True" Visibility="Collapsed"/>
+                <DataGridTextColumn Header="最大值"   Width="60" Binding="{Binding MaxValue,StringFormat={}{0:F2}}" IsReadOnly="True" Visibility="Collapsed"/>
+                <DataGridTextColumn Header="值"       Width="60" Binding="{Binding Value,StringFormat={}{0:F4}}" IsReadOnly="False" />
+                <DataGridTextColumn Header="单位"     Width="40" Binding="{Binding Unit}" IsReadOnly="True" />
+                <DataGridTextColumn Header="备注"     Width="300" Binding="{Binding Comment}" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Vertical"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">
+                <CheckBox Margin="5,0,0,0" Content="全选" Height="25" Width="50" IsChecked="{Binding ComboxChecked}" Command="{Binding SelectAllCommand}"></CheckBox>
+               <!-- <Label Content="定值区号：" Height="25" MinWidth="20" Margin="5"/>
+                <ListBox Margin="5" MinHeight="50" ItemsSource="{Binding ParameterAreaData}"  SelectedIndex="{Binding ParameterAreaSelectedIndex}">
+                </ListBox>-->
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="10,10,10,10">
+                <!--<Button Content="读当前定值区号" Height="25" MaxWidth="200"  Margin="5" Command="{Binding ParameterCommand}" CommandParameter="ParameterAreaRead"></Button>
+                <Button Content="切换定值区" Height="25" MaxWidth="200"  Margin="5" Command="{Binding ParameterCommand}" CommandParameter="ParameterAreaChange"></Button>-->
+                <Button Content="读取参数" Height="25" Width="150"  Margin="5" Command="{Binding ParameterCommand}" CommandParameter="ParameterRead"></Button>
+                <Button Content="读取全部参数" Height="25" Width="150"  Margin="5" Command="{Binding ParameterCommand}" CommandParameter="ParameterReadAll"></Button>
+               
+            </StackPanel>
+            <StackPanel Grid.Column="2" Margin="10">
+                <Button Content="预制" Height="25" Width="150" Margin="5" Command="{Binding ParameterCommand}" CommandParameter="Preset"></Button>
+            </StackPanel>
+            <StackPanel Grid.Column="3" Margin="10">
+                <Button Content="固化" Height="25" Width="150" Margin="5" Command="{Binding ParameterCommand}" CommandParameter="Solidify"></Button>
+                <Button Content="取消" Height="25" Width="150" Margin="5" Command="{Binding ParameterCommand}" CommandParameter="Cancel"></Button>
+            </StackPanel>
+        </Grid >
+
+
+    </Grid>
+</Page>

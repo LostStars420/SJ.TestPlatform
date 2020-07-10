@@ -1,0 +1,21 @@
+﻿<Page x:Class="FTU.Monitor.View.SafetyView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="SafetyView">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Button Content="连接加密机" Command="{Binding SafetyCommand}" CommandParameter="Connect" ></Button>
+            <Button Content="断开加密机" Command="{Binding SafetyCommand}" CommandParameter="Stop"></Button>
+            <Button Content="取随机数"  Command="{Binding SafetyCommand}" CommandParameter="ReadRandom"></Button>
+            <Button Content="加载证书"  Command="{Binding SafetyCommand}" CommandParameter="ReadCertificate"></Button>
+            <Button Content="验证签名"  Command="{Binding SafetyCommand}" CommandParameter="VerSign"></Button>
+            <Button Content="对终端随机数签名" Command="{Binding SafetyCommand}" CommandParameter="InternalSign"></Button>
+            <Button Content="读取终端芯片序列号" Command="{Binding SafetyCommand}" CommandParameter="ReadSerialNumber"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

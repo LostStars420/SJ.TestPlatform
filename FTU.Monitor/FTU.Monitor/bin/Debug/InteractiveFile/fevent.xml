@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFile>
+	<Header fileType="FEVENT" fileVer="1.00" devName="SHFD2000" 	/>
+		<DataRec num="0002">
+	<DI ioa="00071" tm="190319_092809_448" val="1" ioa0="16386" val0="0.000" ioa1="16387" val1="0.000" ioa2="16388" val2="0.000" ioa3="16389" val3="0.000" ioa4="16390" val4="0.000" ioa5="16395" val5="0.000" ioa6="16392" val6="0.000" ioa7="16393" val7="0.000" ioa8="16385" val8="0.000" ioa9="16407" val9="0.000"	/>
+		<DI ioa="00071" tm="190319_092839_677" val="1" ioa0="16386" val0="0.000" ioa1="16387" val1="0.000" ioa2="16388" val2="0.000" ioa3="16389" val3="0.000" ioa4="16390" val4="0.000" ioa5="16395" val5="0.000" ioa6="16392" val6="0.000" ioa7="16393" val7="0.000" ioa8="16385" val8="0.000" ioa9="16407" val9="0.000"	/>
+	</DataRec>
+</DataFile>

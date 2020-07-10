@@ -1,0 +1,13 @@
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.csprojAssemblyReference.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Interop.OnllyCalcEngineLib.dll
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Interop.OnllyDataLib.dll
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.csproj.ResolveComReference.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.MainForm.resources
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.Properties.Resources.resources
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.View.StateSwitch.resources
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.csproj.GenerateResource.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.csproj.CoreCompileInputs.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK\VC_Net\Sojo.TestPlatform.ControlPlatform.exe.config
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK\VC_Net\Sojo.TestPlatform.ControlPlatform.exe
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.csproj.CopyComplete
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\ONLLYSDKSample_VC_Net\obj\Debug\Sojo.TestPlatform.ControlPlatform.exe

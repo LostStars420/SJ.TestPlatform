@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfTelemetering xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Telemetering>
+    <Selected>false</Selected>
+    <Number>1</Number>
+    <ID>16385</ID>
+    <Name>频率（f）</Name>
+    <Value>0</Value>
+    <Unit>Hz</Unit>
+    <Rate>1</Rate>
+    <Comment>短浮点数</Comment>
+  </Telemetering>
+</ArrayOfTelemetering>

@@ -1,0 +1,5 @@
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.PlatformModel\obj\Debug\Sojo.TestPlatform.PlatformModel.csprojAssemblyReference.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.PlatformModel\obj\Debug\Interop.OnllyCalcEngineLib.dll
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.PlatformModel\obj\Debug\Interop.OnllyDataLib.dll
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.PlatformModel\obj\Debug\Sojo.TestPlatform.PlatformModel.csproj.ResolveComReference.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.TestPlatform.PlatformModel\obj\Debug\Sojo.TestPlatform.PlatformModel.csproj.CoreCompileInputs.cache

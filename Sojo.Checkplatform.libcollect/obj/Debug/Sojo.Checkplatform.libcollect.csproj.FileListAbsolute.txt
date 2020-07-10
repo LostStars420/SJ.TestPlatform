@@ -1,0 +1,6 @@
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.Checkplatform.libcollect\bin\Debug\Sojo.Checkplatform.libcollect.dll
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.Checkplatform.libcollect\bin\Debug\Sojo.Checkplatform.libcollect.pdb
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.csprojAssemblyReference.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.csproj.CoreCompileInputs.cache
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.dll
+E:\project\ONLLY 继电保护测试系统二次开发接口--2018-3-3\ONLLYSDK_SAMPLE\VC_Net\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.pdb

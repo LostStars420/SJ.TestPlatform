@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFile>
+	<Header fileType="CO" fileVer="1.00" devName="SJFD2000" 	/>
+		<DataRec num="0064">
+	<DI ioa="24577" tm="190821_180643_368" cmd="select fail   " val="1"	/>
+		<DI ioa="24577" tm="190916_154257_546" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190916_154303_738" cmd="oper   success" val="1"	/>
+		<DI ioa="24586" tm="190918_201907_472" cmd="oper   success" val="1"	/>
+		<DI ioa="24586" tm="190919_102339_960" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190820_110010_326" cmd="select fail   " val="1"	/>
+		<DI ioa="24577" tm="190820_110041_237" cmd="select fail   " val="1"	/>
+		<DI ioa="24586" tm="190820_110122_664" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190820_110149_324" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190820_110152_503" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190820_110211_315" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190820_110214_245" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190820_110653_180" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="190820_110657_889" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190820_110712_281" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190820_110723_897" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190820_110725_652" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190820_111503_088" cmd="select fail   " val="1"	/>
+		<DI ioa="24577" tm="190820_111506_947" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190820_111509_044" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190820_111618_107" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190820_111620_241" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_113030_670" cmd="select fail   " val="1"	/>
+		<DI ioa="24577" tm="190821_113035_240" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_113038_320" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_113050_033" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_113051_871" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_114135_347" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_114139_945" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_114407_435" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="190821_114411_804" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_114414_799" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_115042_856" cmd="select fail   " val="1"	/>
+		<DI ioa="24577" tm="190821_115108_995" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_115111_632" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_115118_185" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_115121_582" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_130700_500" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_130704_351" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_130725_879" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_130728_561" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_131359_254" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_131404_170" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_131433_290" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_131439_725" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_134015_767" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_134022_848" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_134046_276" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_134050_877" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_141344_186" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_141346_624" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_141400_564" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_141403_415" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_141918_945" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_141920_979" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_141928_215" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_141930_550" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_142439_431" cmd="select success" val="1"	/>
+		<DI ioa="24577" tm="190821_142441_487" cmd="oper   success" val="1"	/>
+		<DI ioa="24577" tm="190821_142446_560" cmd="select success" val="0"	/>
+		<DI ioa="24577" tm="190821_142448_106" cmd="oper   success" val="0"	/>
+		<DI ioa="24577" tm="190821_175943_935" cmd="select fail   " val="0"	/>
+		<DI ioa="24577" tm="190821_175949_145" cmd="select fail   " val="1"	/>
+		<DI ioa="24577" tm="190821_180638_318" cmd="select fail   " val="0"	/>
+	</DataRec>
+</DataFile>

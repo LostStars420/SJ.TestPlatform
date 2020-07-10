@@ -1,0 +1,105 @@
+﻿<Page x:Class="FTU.Monitor.View.CombineTelesignalisationManagementView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="CombineTelesignalisationManagementView">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="组合遥信列表" Grid.Column="1" Margin="3" Background="#FFF0F0F0">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="12*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <StackPanel Margin="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button MinWidth="60" Content="删除" Command="{Binding DeleteCombineTelesignalisationCommand}"></Button>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <DataGrid  Margin="5" SelectedIndex="{Binding CombineTelesignalisationGridIndex}" ItemsSource="{Binding CombineTelesignalisationList}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="序号"  Width="*" Binding="{Binding Number}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="遥信名称" Width="1.5*" Binding="{Binding Name}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="遥信ID" Width="1.1*" Binding="{Binding ID, StringFormat={}{0:X4}}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="内容" Width="auto" Binding="{Binding Comment}" IsReadOnly="True" />
+                        </DataGrid.Columns>
+
+                    </DataGrid>
+
+                </Grid>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="组合遥信" Grid.Column="0" Margin="3" HorizontalAlignment="Stretch" Background="#FFF0F0F0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <GroupBox Header="遥信原始点表" Margin="3" Grid.Column="0" HorizontalAlignment="Stretch" BorderBrush="Orange">
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="8.5*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <DataGrid Grid.Column="0" Margin="5" SelectedIndex="{Binding GridIndex}" ItemsSource="{Binding TelesignalisationSourceList}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False">
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="序号"  Width="*" Binding="{Binding Number}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="遥信名称" Width="3*" Binding="{Binding Name}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="遥信ID" Width="1.2*" Binding="{Binding ID, StringFormat={}{0:X4}}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="备注" Width="4*" Binding="{Binding Comment}" IsReadOnly="True" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Grid.Column="1" Content="选择" Height="25" Margin="5" Command="{Binding SelectTelesignalisationPointCommand}" ></Button>
+
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Header="新增组合遥信" Margin="3" Grid.Column="1" BorderBrush="Orange">
+                    <StackPanel Orientation="Vertical">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="逻辑运算符：" Height="25" MinWidth="20" Margin="5"/>
+                            <Button Content="与" Height="20" Width="30"  Margin="5" Command="{Binding LogicOperationCommand}" CommandParameter="AND" ></Button>
+                            <Button Content="或" Height="20" Width="30"  Margin="5" Command="{Binding LogicOperationCommand}" CommandParameter="OR" ></Button>
+                            <Button Content="非" Height="20" Width="30"  Margin="5" Command="{Binding LogicOperationCommand}" CommandParameter="NOT" ></Button>
+                        </StackPanel>
+
+                        <TextBox Margin="5" Height="50" Text="{Binding CombineTelesignalisationContent}" AcceptsReturn="True" TextWrapping="Wrap" ></TextBox>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="名称：" Height="25" MinWidth="20" Margin="5"/>
+                            <TextBox Margin="5" Width="80" Text="{Binding CombineTelesignalisationName}" ></TextBox>
+                            <Button Content="保存" Height="20" Width="30"  Margin="5" Command="{Binding SaveCombineTelesignalisationCommand}" ></Button>
+                        </StackPanel>
+
+                        <TextBlock Margin="10" Foreground="Blue">
+                                这是说明：<LineBreak />  
+                                组合遥信内容说明.
+                        </TextBlock>
+
+                    </StackPanel>
+                </GroupBox>
+
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+
+</Page>

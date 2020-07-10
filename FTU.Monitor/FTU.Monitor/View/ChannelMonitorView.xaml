@@ -1,0 +1,44 @@
+﻿<Window x:Class="FTU.Monitor.View.ChannelMonitorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        Title="通道监视" Height="400" Width="1000" Background="#FFF0F0F0" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*" MinWidth="250"/>
+                <ColumnDefinition Width="*" MinWidth="200"/>
+                <ColumnDefinition Width="*" MinWidth="200"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" Margin="0,8,0,8" Content="监听通道:"/>
+            <ComboBox Grid.Column="1" Width="100" Margin="60,8,50,8" ItemsSource="{Binding PortNum}"  SelectedIndex="{Binding SelectedIndexPortNum}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="DropDownOpened">
+                        <i:InvokeCommandAction Command="{Binding LoadPortNumber}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ComboBox>
+            <Button Grid.Column="2" Width="100" Margin="50,8,50,8" Content="开始监听" Command="{Binding ChannelMonitorCmd}" CommandParameter="StartMonitoring"/>
+            <Button Grid.Column="3" Width="100" Margin="0,8,98.4,8" Content="停止监听" Command="{Binding ChannelMonitorCmd}" CommandParameter="StopMonitoring"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <DataGrid x:Name="dg" Grid.Row="0" Margin="5"  ItemsSource="{Binding ChannelMonitorDataMessage}" AutoGenerateColumns="False"  CanUserAddRows="False" CanUserSortColumns="False" LoadingRow="dg_ChannelMonitorLoadingRow" EnableRowVirtualization="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="序号" Width="40"     Binding="{Binding Number}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="方向" Width="60"  Binding="{Binding Direction}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="时间" Width="150" Binding="{Binding Time}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="报文" Width="150" Binding="{Binding Frame}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="报文解析"  Width="150" Binding="{Binding ParseFrame}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="备注" Width="auto" Binding="{Binding Comment}" IsReadOnly="True" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>
+

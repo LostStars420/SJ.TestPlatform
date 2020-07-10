@@ -1,0 +1,1555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FTU.Monitor.App" Collapsed="true">
+    <Position X="120.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.MainWindow" Collapsed="true">
+    <Position X="125.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAIAAAAAAAAAAIAAAAAAAAgAAAAAAEAAAIAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.ComtradeVersionConverter" Collapsed="true">
+    <Position X="131" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Comtrade\!Enums.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.DataFileTypeConverter" Collapsed="true">
+    <Position X="122.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Comtrade\!Enums.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.AnalogChannelInformation" Collapsed="true">
+    <Position X="118.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAEAABAQAAAAEIAAABAAAAAUAAAoAYEEAgABAAA=</HashCode>
+      <FileName>Comtrade\AnalogChannelInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.ConfigurationHandler" Collapsed="true">
+    <Position X="136.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAgACgAQAAUCAkAEAAAAAEAAAAAAgCIAFSAAAAwAAE=</HashCode>
+      <FileName>Comtrade\ConfigurationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.DataFileHandler" Collapsed="true">
+    <Position X="118.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAgAQAAAAAggAAAAAAAAAgCAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Comtrade\DataFileHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.DataFileSample" Collapsed="true">
+    <Position X="120.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAACBQAAAAAgAACAAQgAAAAAAAAACAAAAQAA=</HashCode>
+      <FileName>Comtrade\DataFileSample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.DigitalChannelInformation" Collapsed="true">
+    <Position X="132.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAIAAAAAAAAAEAAAIAAEEAAABAAA=</HashCode>
+      <FileName>Comtrade\DigitalChannelInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.GlobalSettings" Collapsed="true">
+    <Position X="131" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAAAgAAAAQAAAAAAAAAAAAAAAAAAAAAAIEAAAA=</HashCode>
+      <FileName>Comtrade\GlobalSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.RecordReader" Collapsed="true">
+    <Position X="118.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAEAAAAAAAAAEAAgAAQAAgAAAA=</HashCode>
+      <FileName>Comtrade\RecordReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.RecordWriter" Collapsed="true">
+    <Position X="120.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAAgAAAAAAAEEAAAIAEAACAAAAAAAAACAABAAAA=</HashCode>
+      <FileName>Comtrade\RecordWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Comtrade.SampleRate" Collapsed="true">
+    <Position X="131" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Comtrade\SampleRate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Dao.DevPointDao" Collapsed="true">
+    <Position X="131" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKIAACAAABAAAAAIAAAAAAAAAAAAKQAAABIEAEEAAA=</HashCode>
+      <FileName>Dao\DevPointDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Dao.PointTypeDao" Collapsed="true">
+    <Position X="120.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Dao\PointTypeDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Dao.PointUsedDao" Collapsed="true">
+    <Position X="124" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAACAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Dao\PointUsedDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Dao.ProgramVersionDao" Collapsed="true">
+    <Position X="125.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Dao\ProgramVersionDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.DataService.IEC104" Collapsed="true">
+    <Position X="136.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAACEAAAAAAAIAAIIAAAAA=</HashCode>
+      <FileName>DataService\IEC104.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.DataService.RedefineSerialPort" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="122.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAACAAICAEIKAAAABAIAggAABKAAACAAAEAAGUAIE=</HashCode>
+      <FileName>DataService\RedefineSerialPort.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FTU.Monitor.DataService.SafetyService" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataService\SafetyService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.DataService.SerialPortConnectionParameter" Collapsed="true">
+    <Position X="134.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAAEAAAAAAAAAAABBAAEAAAAACCAAAABBAACAAAAg=</HashCode>
+      <FileName>DataService\SerialPortConnectionParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.DataService.SerialPortService" Collapsed="true">
+    <Position X="136.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gRACAgiAgAwI2IqwKCAKCFIMGBAAgDAgGgRQAaAgRAI=</HashCode>
+      <FileName>DataService\SerialPortService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.DataService.ShowMessage" Collapsed="true">
+    <Position X="124" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAgwAAIAAAAACCFAAAAAAgAAAAEAAA=</HashCode>
+      <FileName>DataService\ShowMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.DataService.Telecontrol" Collapsed="true">
+    <Position X="118.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAYAAAEAAAIAAABEECAAAIAEAFAAEAAAAAoARAAMI=</HashCode>
+      <FileName>Model\Telecontrol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Design.DesignDataService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="129.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Design\DesignDataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="lib60870.ASDUParsingException" Collapsed="true">
+    <Position X="124" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\ASDU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ASDU" Collapsed="true">
+    <Position X="122.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBRACAAERCBBAEAQAIZQAAAEEBAAKgAAAAJAKKgQA=</HashCode>
+      <FileName>Lib60870\ASDU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.BinaryCounterReading" Collapsed="true">
+    <Position X="127.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAEAAAAAAAAAgIAAAAAAAAAAAgAAAgQAAAAAA=</HashCode>
+      <FileName>Lib60870\BinaryCounterReading.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.Bitstring32" Collapsed="true">
+    <Position X="13.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQEBAAABAAAAAAAAAAAAAACAAAQAgAAAAAAA=</HashCode>
+      <FileName>Lib60870\Bitstring32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.Bitstring32WithCP24Time2a" Collapsed="true">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\Bitstring32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.Bitstring32WithCP56Time2a" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\Bitstring32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.BufferFrame" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQACAAAAEAAAAQAAAAAAAAABAAAAAAAAABAAAAAAAI=</HashCode>
+      <FileName>Lib60870\BufferFrame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ConnectionException" Collapsed="true">
+    <Position X="125.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.Connection" Collapsed="true">
+    <Position X="124" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>U4VREQAICWpHCEdXIwAQZ4IyQAkAppQAFKsQgKDqABk=</HashCode>
+      <FileName>Lib60870\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ConnectionParameters" Collapsed="true">
+    <Position X="127.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAgEAAAAAAAAAAABDAEECBABQCiAAEgBhICKAICIg=</HashCode>
+      <FileName>Lib60870\ConnectionParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.CP16Time2a" Collapsed="true">
+    <Position X="134.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAIAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\CP16Time2a.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.CP24Time2a" Collapsed="true">
+    <Position X="136.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAMACABAAEAAAIAAIAAAAAACAgAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\CP24Time2a.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.CP56Time2a" Collapsed="true">
+    <Position X="138" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAFACAAAAGAAAIAAMAACgkACIkAABEAAAAAAA=</HashCode>
+      <FileName>Lib60870\CP56Time2a.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.DoublePointInformation" Collapsed="true">
+    <Position X="20.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQEBAAABAAAAAAAAAAAAAACAAAQAgAAAAAAA=</HashCode>
+      <FileName>Lib60870\DoublePointInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.DoublePointWithCP24Time2a" Collapsed="true">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\DoublePointInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.DoublePointWithCP56Time2a" Collapsed="true">
+    <Position X="21.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\DoublePointInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.EventOfProtectionEquipment" Collapsed="true">
+    <Position X="46.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAAAAQQBAAAAAEAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\EventOfProtectionEquipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.EventOfProtectionEquipmentWithCP56Time2a" Collapsed="true">
+    <Position X="51" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAAAAQQBAAAAAEAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\EventOfProtectionEquipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.Frame" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQACAAAAEAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\Frame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.InformationObject" Collapsed="true">
+    <Position X="61" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAQAAQABAAAAAAAAAAQAAAAAAAAAAAQAAAAAEAAA=</HashCode>
+      <FileName>Lib60870\InformationObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.IntegratedTotals" Collapsed="true">
+    <Position X="74.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAACAAAQABAAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\IntegratedTotals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.IntegratedTotalsWithCP24Time2a" Collapsed="true">
+    <Position X="73.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\IntegratedTotals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.IntegratedTotalsWithCP56Time2a" Collapsed="true">
+    <Position X="75.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\IntegratedTotals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.LibraryCommon" Collapsed="true">
+    <Position X="120.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAAAAACAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Lib60870\LibraryCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ConnectionStatistics" Collapsed="true">
+    <Position X="131" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgEABAIBAAAAAAAAAAAAQAQAAEAEAAAAAAA=</HashCode>
+      <FileName>Lib60870\LibraryCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueNormalizedWithoutQuality" Collapsed="true">
+    <Position X="110.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAQABAAAAQAAAAAAAAAAAAAAAAAQAAgAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueNormalized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueNormalized" Collapsed="true">
+    <Position X="110.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQEBAAABAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueNormalized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueNormalizedWithCP24Time2a" Collapsed="true">
+    <Position X="109.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueNormalized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueNormalizedWithCP56Time2a" Collapsed="true">
+    <Position X="111.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueNormalized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueScaled" Collapsed="true">
+    <Position X="31.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQEBAAABQAAAAEAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueScaled.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueScaledWithCP24Time2a" Collapsed="true">
+    <Position X="30.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueScaled.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueScaledWithCP56Time2a" Collapsed="true">
+    <Position X="33" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueScaled.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueShort" Collapsed="true">
+    <Position X="54.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQEBAAABAAAAAAAAAAAAAACAAAQAgAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueShort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueShortWithCP24Time2a" Collapsed="true">
+    <Position X="53.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueShort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.MeasuredValueShortWithCP56Time2a" Collapsed="true">
+    <Position X="55.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\MeasuredValueShort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.OutputCircuitInfo" Collapsed="true">
+    <Position X="127.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAgAAAAIAAAAAA=</HashCode>
+      <FileName>Lib60870\OutputCircuitInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.PackedOutputCircuitInfo" Collapsed="true">
+    <Position X="80.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAQAAQADAAAABAAACAAIAAgAAAAAAAQAAAAIAAAI=</HashCode>
+      <FileName>Lib60870\PackedOutputCircuitInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.PackedOutputCircuitInfoWithCP56Time2a" Collapsed="true">
+    <Position X="89.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAQAAQADAAAABAAACAAIAAgAAAAAAAQAAAAIAAAI=</HashCode>
+      <FileName>Lib60870\PackedOutputCircuitInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.PackedStartEventsOfProtectionEquipment" Collapsed="true">
+    <Position X="93.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAAAAQQDAAAAAAAACAAAAAoAAAAAAAQAAgAAAAAI=</HashCode>
+      <FileName>Lib60870\PackedStartEventsOfProtectionEquipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.PackedStartEventsOfProtectionEquipmentWithCP56Time2a" Collapsed="true">
+    <Position X="98.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAAAAQQDAAAAAAAACAAAAAoAAAAAAAQAAgAAAAAI=</HashCode>
+      <FileName>Lib60870\PackedStartEventsOfProtectionEquipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ParameterNormalizedValue" Collapsed="true">
+    <Position X="114" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAQAAAAAAAAACAAAAAAAQAAoAAAAAA=</HashCode>
+      <FileName>Lib60870\ParameterMeasuredValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ParameterScaledValue" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAQAAAAEAAAACAAAAAAAQAAIAAAAAA=</HashCode>
+      <FileName>Lib60870\ParameterMeasuredValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ParameterFloatValue" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAAAAAAAACAAACAAAQAgIAAAAAA=</HashCode>
+      <FileName>Lib60870\ParameterMeasuredValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ParameterActivation" Collapsed="true">
+    <Position X="24" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAAAAAAQABAAAAAQgAAAQAAACAAAAAAAQAAIAAAAAA=</HashCode>
+      <FileName>Lib60870\ParameterMeasuredValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.QualityDescriptor" Collapsed="true">
+    <Position X="136.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEABAAAAEAABAAQIAACAAABAgAAAAIAAAAAA=</HashCode>
+      <FileName>Lib60870\QualityDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.QualityDescriptorP" Collapsed="true">
+    <Position X="138" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAgAAAAAAABAAQAAAKAAAAAgAAAAIAAAAAA=</HashCode>
+      <FileName>Lib60870\QualityDescriptorP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ScaledValue" Collapsed="true">
+    <Position X="132.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAIAAAAAAAAAAAgAACgAAAAAAA=</HashCode>
+      <FileName>Lib60870\ScaledValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ASDUQueue" Collapsed="true">
+    <Position X="125.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAAAAAAABIAAIAgAAAAgRAAQAAAgAAAAAACAAAg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.Server" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="138" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAgAwEAgYTGECghAwWgEBIAoEUlQIgAEIAKADACYxQg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="lib60870.ServerConnection" Collapsed="true">
+    <Position X="118.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQAIBIACAACERTUAAgLdAQQCkCApAAQClAgADFBBo=</HashCode>
+      <FileName>Lib60870\ServerConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SetpointCommandQualifier" Collapsed="true">
+    <Position X="120.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAIAAAAAAAAAAAgAAAAQAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommandQualifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SetpointCommandNormalized" Collapsed="true">
+    <Position X="39.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAQABAAAAQAAAAAEAAAAAAAAAAAQAAgAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SetpointCommandNormalizedWithCP56Time2a" Collapsed="true">
+    <Position X="39.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SetpointCommandScaled" Collapsed="true">
+    <Position X="57.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAQAAAAEEAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SetpointCommandScaledWithCP56Time2a" Collapsed="true">
+    <Position X="57.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SetpointCommandShort" Collapsed="true">
+    <Position X="69" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAAAAEAAAAAAACAAAQAgAAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SetpointCommandShortWithCP56Time2a" Collapsed="true">
+    <Position X="69" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.Bitstring32Command" Collapsed="true">
+    <Position X="82.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAAAAAAAAAAAACAAAQAgAAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.Bitstring32CommandWithCP56Time2a" Collapsed="true">
+    <Position X="82.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SetpointCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SingleCommand" Collapsed="true">
+    <Position X="100.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAQABAAAAEAAAAAAAAAAAQAAAAAQAARAAAAAA=</HashCode>
+      <FileName>Lib60870\SingleCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SingleCommandWithCP56Time2a" Collapsed="true">
+    <Position X="100.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SingleCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.DoubleCommand" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAIAQABAAAAAAAAAAgAAAAASAAAAAQAARAAAAAA=</HashCode>
+      <FileName>Lib60870\SingleCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.DoubleCommandWithCP56Time2a" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SingleCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.StepCommand" Collapsed="true">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAA=</HashCode>
+      <FileName>Lib60870\SingleCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.StepCommandWithCP56Time2a" Collapsed="true">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SingleCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SingleCommandQualifier" Collapsed="true">
+    <Position X="125.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAQAAAgAAAARAAAAAA=</HashCode>
+      <FileName>Lib60870\SingleCommandQualifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SingleEvent" Collapsed="true">
+    <Position X="127.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAI=</HashCode>
+      <FileName>Lib60870\SingleEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SinglePointInformation" Collapsed="true">
+    <Position X="63.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQEBAAABAAAAAAAAAAAAAACAAAQAgAAAAAAA=</HashCode>
+      <FileName>Lib60870\SinglePointInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SinglePointWithCP24Time2a" Collapsed="true">
+    <Position X="62.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SinglePointInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SinglePointWithCP56Time2a" Collapsed="true">
+    <Position X="64.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SinglePointInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.PackedSinglePointWithSCD" Collapsed="true">
+    <Position X="84.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAQADAEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAI=</HashCode>
+      <FileName>Lib60870\SinglePointInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.StartEvent" Collapsed="true">
+    <Position X="134.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAABgAAAAAAAAAAAAgAAAAAAgAAAAIABAAQA=</HashCode>
+      <FileName>Lib60870\StartEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.StatusAndStatusChangeDetection" Collapsed="true">
+    <Position X="136.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAIAAAAAAAAAAAgAAAAAAAAIAA=</HashCode>
+      <FileName>Lib60870\StatusAndStatusChangeDetection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.StepPositionInformation" Collapsed="true">
+    <Position X="103.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAUEBAAABAAAAAAAAAAAAAACAAAQggAAAAAAA=</HashCode>
+      <FileName>Lib60870\StepPositionInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.StepPositionWithCP24Time2a" Collapsed="true">
+    <Position X="105" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\StepPositionInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.StepPositionWithCP56Time2a" Collapsed="true">
+    <Position X="102.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAACAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\StepPositionInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.QualifierOfInterrogation" Collapsed="true">
+    <Position X="134.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAACAwIA/AABAAAAAAAAgEAAAAQAAEACAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.InterrogationCommand" Collapsed="true">
+    <Position X="26.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.CounterInterrogationCommand" Collapsed="true">
+    <Position X="35.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAAAAAAQABAQAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ReadCommand" Collapsed="true">
+    <Position X="42" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.TestCommand" Collapsed="true">
+    <Position X="48.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAQ=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ClockSynchronizationCommand" Collapsed="true">
+    <Position X="60" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAgAAQABAAAAAAAAAAAAAAAAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ResetProcessCommand" Collapsed="true">
+    <Position X="66.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAAAAAAAAAKAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.DelayAcquisitionCommand" Collapsed="true">
+    <Position X="71.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAAAAAgAAAAIAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ChangeSettingAreaCommand" Collapsed="true">
+    <Position X="78" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAIAAAACAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ReadParameterAreaCommand" Collapsed="true">
+    <Position X="87" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BADAAgAAQABAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.ReadParameterCommand" Collapsed="true">
+    <Position X="91.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAAgACQABAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SetParameterCommand" Collapsed="true">
+    <Position X="96" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAAgACQABAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.FileServiceCommand" Collapsed="true">
+    <Position X="107.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAAAACQABAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.UpdataCommand" Collapsed="true">
+    <Position X="116.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQABAAAAAAAAAAAAAAABAAAAAQQAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SystemInformationCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lib60870.SystemUtils" Collapsed="true">
+    <Position X="138" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Lib60870\SystemUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.lib60870.FileService" Collapsed="true">
+    <Position X="28.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAABFBASEJSQABCAiAIAEggCAAIIAAAA4AEAAIABAQ=</HashCode>
+      <FileName>Lib60870\FileService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.lib60870.ParameterValueShort" Collapsed="true">
+    <Position X="37.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIACAAQABgAIAAAACAAAAAAAAAICAAAQAgAAAAAAA=</HashCode>
+      <FileName>Lib60870\ParameterValueShort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Lib60870.FixedValueParameter" Collapsed="true">
+    <Position X="44.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEAAAAAQAAAAAAAAACBAAAAAAAAIAAAAQAAIABAAAA=</HashCode>
+      <FileName>Lib60870\FixedValueParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Lib60870.FixedValueParameterObject" Collapsed="true">
+    <Position X="129.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAAABAAEAgAICAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\FixedValueParameterObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.Certificate" Collapsed="true">
+    <Position X="129.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Model\Certificate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.ChannelMonitorShowMessage" Collapsed="true">
+    <Position X="134.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEEAAgAAAAAGAAAAAAAAEAAAAAAAAKgABAAQE=</HashCode>
+      <FileName>Model\ChannelMonitorShowMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.CoefficientBase" Collapsed="true">
+    <Position X="118.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBIAIAAQBAAAgAAAAEAAAAQAAAAAABEAAAAgAQBEAAI=</HashCode>
+      <FileName>Model\CoefficientBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.COHistoryRecord" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Model\COHistoryRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.ConfigurationSet" Collapsed="true">
+    <Position X="138" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AE0AAIAIQVAIAURAWQ6oAQCLkoBTCACFhB2BkGAZIFA=</HashCode>
+      <FileName>Model\ConfigurationSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.ConstantParameter" Collapsed="true">
+    <Position X="132.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIACEEAAAgAAAIEAAAAQAAAAAAAEgAAAgAABEAAI=</HashCode>
+      <FileName>Model\ConstantParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.DataItem" Collapsed="true">
+    <Position X="124" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.DataService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="125.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FTU.Monitor.Model.DevPoint" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SBAAIACEEAAAgAAAIEAAAASAEAAAAAEAAAAgIQRFAAI=</HashCode>
+      <FileName>Model\DevPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.Energy" Collapsed="true">
+    <Position X="134.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABAAAAAAAAgBAAIEAEAAQAAAAEAAAAAAAgAQAEAQI=</HashCode>
+      <FileName>Model\Energy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.FaultEvent" Collapsed="true">
+    <Position X="118.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAgAAgAAAAEAEAAAAAAAAAAAAAAAAAAAEAQA=</HashCode>
+      <FileName>Model\FaultEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.FaultEventHistoryRecord" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EARAAAAQCAIggEAABoEAACAAAADA/PPPAAAAAIEAACA=</HashCode>
+      <FileName>Model\FaultEventHistoryRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.FileModel" Collapsed="true">
+    <Position X="124" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAAAAAAggAAAAEBAAAQAAAAAAAAAAAQAAAJAAQA=</HashCode>
+      <FileName>Model\FileModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.HistoryRecordBase" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAECAAAAAAEoAAgQAAAAAAAAAAAAAAABAAgA=</HashCode>
+      <FileName>Model\HistoryRecordBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.OutputData" Collapsed="true">
+    <Position X="129.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAACAEAAAIIAAACAAAAAAAAAAAAAQAAABAAABAQA=</HashCode>
+      <FileName>Model\OutputData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.PlotShowModel" Collapsed="true">
+    <Position X="136.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\PlotShowModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.PointTypeInfo" Collapsed="true">
+    <Position X="122.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAFAAA=</HashCode>
+      <FileName>Model\PointTypeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.PointUsed" Collapsed="true">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAIAAAECAAAAAAJAEAAAAAAEAEAAIAAAAAgAAAAIA=</HashCode>
+      <FileName>Model\PointUsed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.ProgramVersionModel" Collapsed="true">
+    <Position X="127.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProgramVersionModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.ProtocolMessage" Collapsed="true">
+    <Position X="129.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAABACAAAAAEQEAAAIAAAEAAAAAAAAAAAAhAAQA=</HashCode>
+      <FileName>Model\ProtocolMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.Safety" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAQAAAAAAAAAAgCAABIAAAAEAAAAAAAAAEAACIA=</HashCode>
+      <FileName>Model\Safety.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.SOE" Collapsed="true">
+    <Position X="129.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAEEgAggAABAEAAAAQAAAAAAAAAAAAgAABEAQA=</HashCode>
+      <FileName>Model\SOE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.Telemetering" Collapsed="true">
+    <Position X="127.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QFAAIIAEEAIAgAAAJEEAAAQAAEAEAAEAAAAgoQREAAI=</HashCode>
+      <FileName>Model\Telemetering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Model.Telesignalisation" Collapsed="true">
+    <Position X="132.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAIACEEAAAgAAAJEEAAASAAEAEAAEAAAAgoAREAAI=</HashCode>
+      <FileName>Model\Telesignalisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Properties.Resources" Collapsed="true">
+    <Position X="125.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Properties.Settings" Collapsed="true">
+    <Position X="122.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Util.ConfigUtil" Collapsed="true">
+    <Position X="118.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAQAAIAAAAAAABAAAA=</HashCode>
+      <FileName>Util\ConfigUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Util.DBHelperSQLite" Collapsed="true">
+    <Position X="127.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAACgAAAAAAgQAAQAAAAgAAAAAAAAAAgI=</HashCode>
+      <FileName>Util\DBHelperSQLite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Util.LogHelper" Collapsed="true">
+    <Position X="122.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAAAAAAAAAAAEAAAAAAEAEAAA=</HashCode>
+      <FileName>Util\LogHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Util.ReportUtil" Collapsed="true">
+    <Position X="124" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAAAAEACAAAAA=</HashCode>
+      <FileName>Util\ReportUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.Util.UtilHelper" Collapsed="true">
+    <Position X="120.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAAAAAgAAAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAA=</HashCode>
+      <FileName>Util\UtilHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.ChangeSoftwareVersionView" Collapsed="true">
+    <Position X="131" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>View\ChangeSoftwareVersionView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.ChannelMonitorView" Collapsed="true">
+    <Position X="136.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ChannelMonitorView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.CoefficientView" Collapsed="true">
+    <Position X="120.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\CoefficientView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.CombineTelesignalisationManagementView" Collapsed="true">
+    <Position X="124" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\CombineTelesignalisationManagementView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.CommunicationView" Collapsed="true">
+    <Position X="127.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\CommunicationView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.ComtradeView" Collapsed="true">
+    <Position X="132.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ComtradeView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.ConfigView" Collapsed="true">
+    <Position X="120.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ConfigView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.ConnectionParametersView" Collapsed="true">
+    <Position X="129.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ConnectionParametersView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.EnergyView" Collapsed="true">
+    <Position X="136.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\EnergyView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.FaultEventView" Collapsed="true">
+    <Position X="120.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\FaultEventView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.FileServiceView" Collapsed="true">
+    <Position X="125.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\FileServiceView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.HistoryRecordView" Collapsed="true">
+    <Position X="132.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\HistoryRecordView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.InherentParameterView" Collapsed="true">
+    <Position X="138" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\InherentParameterView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.ParameterView" Collapsed="true">
+    <Position X="131" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ParameterView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.PointManagementView" Collapsed="true">
+    <Position X="138" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PointManagementView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.ProtocolPropertyView" Collapsed="true">
+    <Position X="131" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ProtocolPropertyView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.ProtocolSet" Collapsed="true">
+    <Position X="132.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ProtocolSet.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.SafetyView" Collapsed="true">
+    <Position X="127.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\SafetyView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.SOEView" Collapsed="true">
+    <Position X="131" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\SOEView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.TelecontrolPWView" Collapsed="true">
+    <Position X="120.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>View\TelecontrolPWView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.TelecontrolView" Collapsed="true">
+    <Position X="124" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\TelecontrolView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.TelemeteringView" Collapsed="true">
+    <Position X="129.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\TelemeteringView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.TelesignalisationView" Collapsed="true">
+    <Position X="134.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\TelesignalisationView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.View.TimeView" Collapsed="true">
+    <Position X="138" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\TimeView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.ChangeSoftwareVersionViewModel" Collapsed="true">
+    <Position X="132.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAgAAAAAACiAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ChangeSoftwareVersionViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.ChannelMonitorViewModel" Collapsed="true">
+    <Position X="138" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMIAAAAAAoAAQAAAAAAAAgAAAAIAAABAaAEAACAAgI=</HashCode>
+      <FileName>ViewModel\ChannelMonitorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.CoefficientViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="122.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAAGAUQQAAAAAAAAAEAkRAAAAAIAQAABAIAAA=</HashCode>
+      <FileName>ViewModel\CoefficientViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.CombineTelesignalisationManagementViewModel" Collapsed="true">
+    <Position X="125.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAECAAwSAACIB4iAAEAQQICAAACACAAABgAEAAAgA=</HashCode>
+      <FileName>ViewModel\CombineTelesignalisationManagementViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.CommunicationViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="129.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NQTgDVEEwm4EADwrEBDQaYpIjwRMAAFIZQmMBAjKsAI=</HashCode>
+      <FileName>ViewModel\CommunicationViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.ComtradeViewModel" Collapsed="true">
+    <Position X="134.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAMAAAAAAAAAAAgAAIAIAAAABAA=</HashCode>
+      <FileName>ViewModel\ComtradeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.ConfigViewModel" Collapsed="true">
+    <Position X="122.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IADDAQACgAKiAISfAAAIAAAZMQCAImAQAYGCEAAAAgA=</HashCode>
+      <FileName>ViewModel\ConfigViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.EnergyViewModel" Collapsed="true">
+    <Position X="138" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAEAAAAAAAAAAAAABAAAAAQAAAAAAAAQAAAA=</HashCode>
+      <FileName>ViewModel\EnergyViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.FaultEventViewModel" Collapsed="true">
+    <Position X="122.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAgAAAAAAAAAAgAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\FaultEventViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.FileServiceViewModel" Collapsed="true">
+    <Position X="127.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgEAABIAoEACAIAAAAAQDIAUIgAgAADBAoABgBAAEgA=</HashCode>
+      <FileName>ViewModel\FileServiceViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.HistoryRecordViewModel" Collapsed="true">
+    <Position X="134.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAAAAQBEAgAAAAEAAAIABCAAAAAQAECEAABAAAEAA=</HashCode>
+      <FileName>ViewModel\HistoryRecordViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.InherentParameterViewModel" Collapsed="true">
+    <Position X="118.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAEAIERAEAQAICAAAAAAQAAAAEAEAgIABAEACABAAA=</HashCode>
+      <FileName>ViewModel\InherentParameterViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.MainViewModel" Collapsed="true">
+    <Position X="124" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAJIgAACAAAQAAQAAAAAAAUAAAAQAAAAEBAAgAAAAA=</HashCode>
+      <FileName>ViewModel\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.ParameterViewModel" Collapsed="true">
+    <Position X="132.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAQBACGAQAAAIAAQEDAAAAkQoAAAoAAAABAAQEAg=</HashCode>
+      <FileName>ViewModel\ParameterViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.PasswordBoxHelper" Collapsed="true">
+    <Position X="134.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAIQAgEBAEAAAAAAIAAABAAAAAAgAAAICA=</HashCode>
+      <FileName>ViewModel\PasswordBoxHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.PointManagementViewModel" Collapsed="true">
+    <Position X="118.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAoAAAAYAAAAEACggAEAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\PointManagementViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.SafetyViewModel" Collapsed="true">
+    <Position X="129.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\SafetyViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.SOEViewModel" Collapsed="true">
+    <Position X="132.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAgAAAAAAAAAAAFIAAAAAAAEAAA=</HashCode>
+      <FileName>ViewModel\SOEViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.TelecontrolPWViewModel" Collapsed="true">
+    <Position X="122.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAQAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAA=</HashCode>
+      <FileName>ViewModel\TelecontrolPWViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.TelecontrolViewModel" Collapsed="true">
+    <Position X="125.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAIABAEEAuICAEACAiAAAAQJAJIAABAAAAYAACAA=</HashCode>
+      <FileName>ViewModel\TelecontrolViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.TelemeteringViewModel" Collapsed="true">
+    <Position X="131" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IJAQACANAEAAAAAAAAAAAAIAQAAAgABIAAACAAAAAAA=</HashCode>
+      <FileName>ViewModel\TelemeteringViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.TelesignalisationViewModel" Collapsed="true">
+    <Position X="136.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAJAEAAAAAAAEAAAAAAAAAAAARIAAACAAAAAAA=</HashCode>
+      <FileName>ViewModel\TelesignalisationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.TimeViewModel" Collapsed="true">
+    <Position X="118.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAAADAAAAAAAAAIAAIAAAAAACIAAAAAEAAAAAAA=</HashCode>
+      <FileName>ViewModel\TimeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTU.Monitor.ViewModel.ViewModelLocator" Collapsed="true">
+    <Position X="122.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModelLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FTU.Monitor.Model.IDataService" Collapsed="true">
+    <Position X="118.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\IDataService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="FTU.Monitor.Comtrade.ComtradeVersion" Collapsed="true">
+    <Position X="122.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAACA=</HashCode>
+      <FileName>Comtrade\!Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FTU.Monitor.Comtrade.DataFileType" Collapsed="true">
+    <Position X="125.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAEAAAAAAAAAAAAAAAAAAACAAAACAAAAACA=</HashCode>
+      <FileName>Comtrade\!Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FTU.Monitor.DataService.CauseOfInitialization" Collapsed="true">
+    <Position X="118.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\CauseOfInitialization.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="lib60870.CauseOfTransmission" Collapsed="true">
+    <Position X="120.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBBAEAsAABARkAIAgQIQgQEAAoAARAAAAhAAAMA0gAA=</HashCode>
+      <FileName>Lib60870\CauseOfTransmission.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="lib60870.ConnectionEvent" Collapsed="true">
+    <Position X="124" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="lib60870.DoublePointValue" Collapsed="true">
+    <Position X="127.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAQCAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Lib60870\DoublePointInformation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="lib60870.ServerMode" Collapsed="true">
+    <Position X="131" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAQAAA=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="lib60870.StepCommandValue" Collapsed="true">
+    <Position X="132.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAABAA=</HashCode>
+      <FileName>Lib60870\SingleCommand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="lib60870.EventState" Collapsed="true">
+    <Position X="129.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAQAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\SingleEvent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="lib60870.TypeID" Collapsed="true">
+    <Position X="134.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BwA5AAAAAADAAUACQAAA+h1sAwAAAIAAGAQIECAABIA=</HashCode>
+      <FileName>Lib60870\TypeID.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="lib60870.ASDUReceivedHandler" Collapsed="true">
+    <Position X="120.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Lib60870\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.ConnectionHandler" Collapsed="true">
+    <Position X="124" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.RawMessageHandler" Collapsed="true">
+    <Position X="132.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Lib60870\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.InterrogationHandler" Collapsed="true">
+    <Position X="131" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAABAg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.CounterInterrogationHandler" Collapsed="true">
+    <Position X="127.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAABAg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.ReadHandler" Collapsed="true">
+    <Position X="134.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAgAAgAAAAAAAAAAAAg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.ClockSynchronizationHandler" Collapsed="true">
+    <Position X="122.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAAQAg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.ResetProcessHandler" Collapsed="true">
+    <Position X="136.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAABAg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.DelayAcquisitionHandler" Collapsed="true">
+    <Position X="129.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAAQAg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.ASDUHandler" Collapsed="true">
+    <Position X="118.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAAAAg=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="lib60870.ConnectionRequestHandler" Collapsed="true">
+    <Position X="125.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib60870\Server.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

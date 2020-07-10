@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfTelecontrol xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Telecontrol>
+    <Selected>false</Selected>
+    <Number>1</Number>
+    <YKID>24577</YKID>
+    <YKName>开关分合</YKName>
+    <YKRemark></YKRemark>
+  </Telecontrol>
+  <Telecontrol>
+    <Selected>false</Selected>
+    <Number>2</Number>
+    <YKID>24578</YKID>
+    <YKName>电池活化</YKName>
+    <YKRemark></YKRemark>
+  </Telecontrol>
+  <Telecontrol>
+    <Selected>false</Selected>
+    <Number>3</Number>
+    <YKID>24579</YKID>
+    <YKName>远程复位</YKName>
+    <YKRemark></YKRemark>
+  </Telecontrol>
+    <Telecontrol>
+    <Selected>false</Selected>
+    <Number>4</Number>
+    <YKID>24580</YKID>
+    <YKName>清除记录</YKName>
+    <YKRemark></YKRemark>
+  </Telecontrol>
+</ArrayOfTelecontrol>

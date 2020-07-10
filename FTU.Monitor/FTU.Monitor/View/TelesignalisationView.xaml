@@ -1,0 +1,58 @@
+﻿<Page x:Class="FTU.Monitor.View.TelesignalisationView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" >
+    <!--<i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadDataCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>-->
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel Margin="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Width="80" Content="刷新" Command="{Binding GeneralInterrogationCommand}"></Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="13*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <DataGrid ItemsSource="{Binding TelesignalisationData}" AutoGenerateColumns="False"  CanUserAddRows="False" CanUserSortColumns="False" Grid.ColumnSpan="2" Margin="0,0,-0.4,-0.4">
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Value}" Value = "1">
+                                <Setter Property="Background" Value="#FFD2F4F9"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header="序号"  Width="40" Binding="{Binding Number}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="遥信名称" Width="100" Binding="{Binding Name}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="遥信ID" Width="80" Binding="{Binding ID, StringFormat={}{0:X4}}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="遥信值" Width="80" Binding="{Binding Value}" />
+                    <DataGridTextColumn Header="备注" Width="300" Binding="{Binding Comment}" IsReadOnly="True" />
+                </DataGrid.Columns>
+
+            </DataGrid>
+
+        </Grid>
+        <Grid Grid.Row="2">
+            <TextBox Text="{Binding TelesignalPointError}" TextWrapping="Wrap"></TextBox>
+        </Grid>
+    </Grid>
+
+</Page>

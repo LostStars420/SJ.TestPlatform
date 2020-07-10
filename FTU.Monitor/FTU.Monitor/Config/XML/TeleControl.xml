@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfTelecontrol xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Telecontrol>
+    <Number>1</Number>
+    <YKID>24577</YKID>
+    <YKName>开关分合</YKName>
+    <YKRemark />
+    <Selected>false</Selected>
+  </Telecontrol>
+</ArrayOfTelecontrol>

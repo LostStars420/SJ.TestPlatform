@@ -1,0 +1,58 @@
+﻿<PageFunction
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+    x:Class="FTU.Monitor.View.SOEView"
+    x:TypeArguments="sys:String"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+     xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    mc:Ignorable="d"  
+    Title="SOEView">    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+       <Grid Grid.Row="0">
+            <StackPanel Margin="3" Orientation="Horizontal" HorizontalAlignment="Right">            
+                <Button Margin="0,0,5,0" MinWidth="60" Content="导入" Command="{Binding SOECommand}" CommandParameter="ImportData"></Button>
+                <Button MinWidth="60" Content="导出" Command="{Binding SOECommand}" CommandParameter="ExportData"></Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <DataGrid x:Name="dg" Grid.Row="0" ItemsSource="{Binding SOEData}"  AutoGenerateColumns="False"  CanUserAddRows="False" CanUserSortColumns="False" EnableRowVirtualization="False"> <!--LoadingRow="dg_LoadingRow"--> 
+                
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Value}" Value = "1">
+                                <Setter Property="Background" Value="#FFD2F4F9"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="序号" Width="40"     Binding="{Binding Number}"  IsReadOnly="True" />
+                    <DataGridTextColumn Header="点号" Width="60"  Binding="{Binding ID}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="时间" Width="150" Binding="{Binding Time}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="内容" Width="150" Binding="{Binding Content}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="值"  Width="50" Binding="{Binding Value}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="备注" Width="100" Binding="{Binding Comment}" IsReadOnly="True" />
+            </DataGrid.Columns>
+            
+            <DataGrid.ContextMenu>
+                <ContextMenu >
+                    <MenuItem Header="清除" Command="{Binding SOECommand}" CommandParameter="Clear">
+                    </MenuItem>
+                    <MenuItem Header="继续" Command="{Binding SOECommand}" CommandParameter="Continue">
+                    </MenuItem>
+                    <MenuItem Header="暂停" Command="{Binding SOECommand}" CommandParameter="Stop">
+                    </MenuItem>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        </Grid>
+    </Grid>
+</PageFunction>

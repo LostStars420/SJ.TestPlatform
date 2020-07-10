@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EABC8B3-6AC3-40F4-B4A9-2C5CAE4F752F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FTU.Monitor</RootNamespace>
+    <AssemblyName>FTU.Monitor</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\FTU.Monitor.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FTU.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.2.0.37226, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\Log4net.4.5\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MoonPdfLib, Version=0.3.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MoonPdfLib.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\net45\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\OxyPlot.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Wpf">
+      <HintPath>..\packages\OxyPlot.Wpf.1.0.0\lib\net45\OxyPlot.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.110.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Data.SQLite.Core.1.0.110.0\lib\net451\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.110.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Data.SQLite.EF6.1.0.110.0\lib\net451\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.110.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Data.SQLite.Linq.1.0.110.0\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.0\lib\net\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock">
+      <HintPath>..\packages\AvalonDock\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.resources">
+      <HintPath>..\packages\AvalonDock\Xceed.Wpf.AvalonDock.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero">
+      <HintPath>..\packages\AvalonDock\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Expression">
+      <HintPath>..\packages\AvalonDock\Xceed.Wpf.AvalonDock.Themes.Expression.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro">
+      <HintPath>..\packages\AvalonDock\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010">
+      <HintPath>..\packages\AvalonDock\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CheckValueService\IPCheckRule.cs" />
+    <Compile Include="CheckValueService\NumberRangeRule.cs" />
+    <Compile Include="Comtrade\!Enums.cs" />
+    <Compile Include="Comtrade\AnalogChannelInformation.cs" />
+    <Compile Include="Comtrade\AnalogChannelInfoTest.cs" />
+    <Compile Include="Comtrade\ConfigurationHandler.cs" />
+    <Compile Include="Comtrade\ConfigurationHandlerTest.cs" />
+    <Compile Include="Comtrade\DataFileHandler.cs" />
+    <Compile Include="Comtrade\DataFileHandlerTest.cs" />
+    <Compile Include="Comtrade\DataFileSample.cs" />
+    <Compile Include="Comtrade\DataFileSampleTest.cs" />
+    <Compile Include="Comtrade\DigitalChannelInformation.cs" />
+    <Compile Include="Comtrade\DigitalChannelInfoTest.cs" />
+    <Compile Include="Comtrade\GlobalSettings.cs" />
+    <Compile Include="Comtrade\RecordReader.cs" />
+    <Compile Include="Comtrade\RecordReaderTest.cs" />
+    <Compile Include="Comtrade\RecordTest.cs" />
+    <Compile Include="Comtrade\RecordWriter.cs" />
+    <Compile Include="Comtrade\RecordWriterTest.cs" />
+    <Compile Include="Comtrade\SampleRate.cs" />
+    <Compile Include="Comtrade\SampleRateTest.cs" />
+    <Compile Include="Dao\DevPointDao.cs" />
+    <Compile Include="Dao\DTUConfigureDao.cs" />
+    <Compile Include="Dao\DTUConfigurePointTableDao.cs" />
+    <Compile Include="Dao\PointTypeDao.cs" />
+    <Compile Include="Dao\PointUsedDao.cs" />
+    <Compile Include="Dao\ProgramVersionDao.cs" />
+    <Compile Include="Dao\UserRoleMapDao.cs" />
+    <Compile Include="DataService\IEC104.cs" />
+    <Compile Include="DataService\RedefineSerialPort.cs" />
+    <Compile Include="DataService\RedefineSocket.cs" />
+    <Compile Include="DataService\SerialPortConnectionParameter.cs" />
+    <Compile Include="DataService\SerialPortService.cs" />
+    <Compile Include="DataService\ShowMessage.cs" />
+    <Compile Include="EncryptExportModel\ContantParameterForExport.cs" />
+    <Compile Include="EncryptExportModel\DevPointExportModel.cs" />
+    <Compile Include="EncryptExportModel\ConstantParameterExportModel.cs" />
+    <Compile Include="EncryptExportModel\EncryptExportModelBase.cs" />
+    <Compile Include="Lib60870\ASDU.cs" />
+    <Compile Include="Lib60870\BinaryCounterReading.cs" />
+    <Compile Include="Lib60870\Bitstring32.cs" />
+    <Compile Include="Lib60870\BufferFrame.cs" />
+    <Compile Include="Lib60870\CauseOfInitialization.cs" />
+    <Compile Include="Lib60870\CauseOfTransmission.cs" />
+    <Compile Include="Lib60870\Connection.cs" />
+    <Compile Include="Lib60870\ConnectionParameters.cs" />
+    <Compile Include="Lib60870\CP16Time2a.cs" />
+    <Compile Include="Lib60870\CP24Time2a.cs" />
+    <Compile Include="Lib60870\CP56Time2a.cs" />
+    <Compile Include="Lib60870\DoublePointInformation.cs" />
+    <Compile Include="Lib60870\EventOfProtectionEquipment.cs" />
+    <Compile Include="Lib60870\FileService.cs" />
+    <Compile Include="Lib60870\FixedValueParameter.cs" />
+    <Compile Include="Lib60870\FixedValueParameterObject.cs" />
+    <Compile Include="Lib60870\Frame.cs" />
+    <Compile Include="Lib60870\InformationObject.cs" />
+    <Compile Include="Lib60870\IntegratedTotals.cs" />
+    <Compile Include="Lib60870\LibraryCommon.cs" />
+    <Compile Include="Lib60870\MeasuredValueNormalized.cs" />
+    <Compile Include="Lib60870\MeasuredValueScaled.cs" />
+    <Compile Include="Lib60870\MeasuredValueShort.cs" />
+    <Compile Include="Lib60870\OutputCircuitInfo.cs" />
+    <Compile Include="Lib60870\PackedOutputCircuitInfo.cs" />
+    <Compile Include="Lib60870\PackedStartEventsOfProtectionEquipment.cs" />
+    <Compile Include="Lib60870\ParameterMeasuredValues.cs" />
+    <Compile Include="Lib60870\ParameterValueShort.cs" />
+    <Compile Include="Lib60870\QualityDescriptor.cs" />
+    <Compile Include="Lib60870\QualityDescriptorP.cs" />
+    <Compile Include="Lib60870\ScaledValue.cs" />
+    <Compile Include="Lib60870\Server.cs" />
+    <Compile Include="Lib60870\ServerConnection.cs" />
+    <Compile Include="Lib60870\SetpointCommandQualifier.cs" />
+    <Compile Include="Lib60870\SetpointCommands.cs" />
+    <Compile Include="Lib60870\SingleCommand.cs" />
+    <Compile Include="Lib60870\SingleCommandQualifier.cs" />
+    <Compile Include="Lib60870\SingleEvent.cs" />
+    <Compile Include="Lib60870\SinglePointInformation.cs" />
+    <Compile Include="Lib60870\StartEvent.cs" />
+    <Compile Include="Lib60870\StatusAndStatusChangeDetection.cs" />
+    <Compile Include="Lib60870\StepPositionInformation.cs" />
+    <Compile Include="Lib60870\SystemInformationCommands.cs" />
+    <Compile Include="Lib60870\SystemUtils.cs" />
+    <Compile Include="Lib60870\TypeID.cs" />
+    <Compile Include="Model\ChannelMonitorShowMessage.cs" />
+    <Compile Include="Model\CoefficientBase.cs" />
+    <Compile Include="Model\COHistoryRecord.cs" />
+    <Compile Include="Model\ConfigurationSet.cs" />
+    <Compile Include="Model\COS.cs" />
+    <Compile Include="Model\DevPoint.cs" />
+    <Compile Include="Model\DTUConfigurePointTableModelCollection\DTUEachModuleConfigurationModel.cs" />
+    <Compile Include="Model\DTUConfigurePointTableModelCollection\DTUEachModulePointTableModel.cs" />
+    <Compile Include="Model\DTUConfigurePointTableModelCollection\DTUNode.cs" />
+    <Compile Include="Model\DTUConfigurePointTableModelCollection\DTUPointTableModuleModel.cs" />
+    <Compile Include="Model\Energy.cs" />
+    <Compile Include="Model\FaultEvent.cs" />
+    <Compile Include="Model\FaultEventHistoryRecord.cs" />
+    <Compile Include="Model\FileModel.cs" />
+    <Compile Include="Model\HistoryRecordInfo.cs" />
+    <Compile Include="Model\ManageUsersModelCollectiopn\UserRoleMapModel.cs" />
+    <Compile Include="Model\Node.cs" />
+    <Compile Include="Model\OutputData.cs" />
+    <Compile Include="Model\ConstantParameter.cs" />
+    <Compile Include="Model\PlotShowModel.cs" />
+    <Compile Include="Model\PointTypeInfo.cs" />
+    <Compile Include="Model\PointUsed.cs" />
+    <Compile Include="Model\ProgramVersionModel.cs" />
+    <Compile Include="Model\ProtocolMessage.cs" />
+    <Compile Include="Model\SOE.cs" />
+    <Compile Include="Model\HistoryRecordBase.cs" />
+    <Compile Include="Model\Telecontrol.cs" />
+    <Compile Include="Model\Telemetering.cs" />
+    <Compile Include="Model\TelemeteringList.cs" />
+    <Compile Include="Model\Telesignalisation.cs" />
+    <Compile Include="Model\TelesignalisationList.cs" />
+    <Compile Include="Service\CoefficientManageService.cs" />
+    <Compile Include="Service\CombineTelesignalisationManageService.cs" />
+    <Compile Include="Service\ConfigManageService.cs" />
+    <Compile Include="Service\ManagePointTableService.cs" />
+    <Compile Include="Service\ParameterManageService.cs" />
+    <Compile Include="Service\TelecontrolManageService.cs" />
+    <Compile Include="Service\TelemeteringManageService.cs" />
+    <Compile Include="Service\TelesignalisationManageService.cs" />
+    <Compile Include="UpLoadConfigurePointTable\CalibrateCoefficient.cs" />
+    <Compile Include="UpLoadConfigurePointTable\FixedParameter.cs" />
+    <Compile Include="UpLoadConfigurePointTable\FixedValueAreaOne.cs" />
+    <Compile Include="UpLoadConfigurePointTable\FixedValueAreaZero.cs" />
+    <Compile Include="UpLoadConfigurePointTable\InherentParameter.cs" />
+    <Compile Include="UpLoadConfigurePointTable\PointNumberCollection.cs" />
+    <Compile Include="UpLoadConfigurePointTable\TelecontrolForUpLoad.cs" />
+    <Compile Include="UpLoadConfigurePointTable\TelemeteringForUpLoad.cs" />
+    <Compile Include="UpLoadConfigurePointTable\TelesignalForUpLoad.cs" />
+    <Compile Include="Util\ConfigUtil.cs" />
+    <Compile Include="Util\DBHelperSQLite.cs" />
+    <Compile Include="Util\DTUConfigureUtil.cs" />
+    <Compile Include="Util\EncryptAndDecodeUtil.cs" />
+    <Compile Include="Util\LogHelper.cs" />
+    <Compile Include="Util\ReportUtil.cs" />
+    <Compile Include="Util\UtilHelper.cs" />
+    <Compile Include="ViewModel\AboutViewModel.cs" />
+    <Compile Include="ViewModel\AddNewConfigureLeafNodeViewModel.cs" />
+    <Compile Include="ViewModel\ChangeSoftwareVersionViewModel.cs" />
+    <Compile Include="ViewModel\ChannelMonitorViewModel.cs" />
+    <Compile Include="ViewModel\CoefficientViewModel.cs" />
+    <Compile Include="ViewModel\CombineTelesignalisationManagementViewModel.cs" />
+    <Compile Include="ViewModel\CommunicationViewModel.cs" />
+    <Compile Include="ViewModel\ComtradeViewModel.cs" />
+    <Compile Include="ViewModel\ConfigViewModel.cs" />
+    <Compile Include="ViewModel\COSViewModel.cs" />
+    <Compile Include="ViewModel\DTUConfigurePointTableViewModel.cs" />
+    <Compile Include="ViewModel\DTUConfigureViewModel.cs" />
+    <Compile Include="ViewModel\EnergyViewModel.cs" />
+    <Compile Include="ViewModel\FaultEventViewModel.cs" />
+    <Compile Include="ViewModel\FileServiceViewModel.cs" />
+    <Compile Include="ViewModel\HistoryRecordViewModel.cs" />
+    <Compile Include="ViewModel\IIEC104Handler.cs" />
+    <Compile Include="ViewModel\InherentParameterViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ManageUsers\OneUserInfoViewModel.cs" />
+    <Compile Include="ViewModel\ManageUsers\SuperAdministratorViewModel.cs" />
+    <Compile Include="ViewModel\ParameterViewModel.cs" />
+    <Compile Include="ViewModel\PasswordBoxHelper.cs" />
+    <Compile Include="ViewModel\ReadmeViewModel.cs" />
+    <Compile Include="ViewModel\SafetyViewModel.cs" />
+    <Compile Include="ViewModel\SOEViewModel.cs" />
+    <Compile Include="ViewModel\TelecontrolPWViewModel.cs" />
+    <Compile Include="ViewModel\TelecontrolViewModel.cs" />
+    <Compile Include="ViewModel\TelemeteringViewModel.cs" />
+    <Compile Include="ViewModel\TelemetryViewModel.cs" />
+    <Compile Include="ViewModel\TelesignalisationViewModel.cs" />
+    <Compile Include="ViewModel\TimeViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddNewConfigureLeafNode.xaml.cs">
+      <DependentUpon>AddNewConfigureLeafNode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChangeSoftwareVersionView.xaml.cs">
+      <DependentUpon>ChangeSoftwareVersionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChannelMonitorView.xaml.cs">
+      <DependentUpon>ChannelMonitorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CoefficientView.xaml.cs">
+      <DependentUpon>CoefficientView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CombineTelesignalisationManagementView.xaml.cs">
+      <DependentUpon>CombineTelesignalisationManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConfigView.xaml.cs">
+      <DependentUpon>ConfigView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommunicationView.xaml.cs">
+      <DependentUpon>CommunicationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ComtradeView.xaml.cs">
+      <DependentUpon>ComtradeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\COSView.xaml.cs">
+      <DependentUpon>COSView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DTUConfigurePointTableView.xaml.cs">
+      <DependentUpon>DTUConfigurePointTableView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DTUConfigureView.xaml.cs">
+      <DependentUpon>DTUConfigureView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\HistoryRecordView.xaml.cs">
+      <DependentUpon>HistoryRecordView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InherentParameterView.xaml.cs">
+      <DependentUpon>InherentParameterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManageUsers\OneUserInfoWindow.xaml.cs">
+      <DependentUpon>OneUserInfoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManageUsers\SuperAdministratorView.xaml.cs">
+      <DependentUpon>SuperAdministratorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OperationManualView.xaml.cs">
+      <DependentUpon>OperationManualView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReadmeView.xaml.cs">
+      <DependentUpon>ReadmeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TelecontrolPWView.xaml.cs">
+      <DependentUpon>TelecontrolPWView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConnectionParametersView.xaml.cs">
+      <DependentUpon>ConnectionParametersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EnergyView.xaml.cs">
+      <DependentUpon>EnergyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FaultEventView.xaml.cs">
+      <DependentUpon>FaultEventView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FileServiceView.xaml.cs">
+      <DependentUpon>FileServiceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ParameterView.xaml.cs">
+      <DependentUpon>ParameterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProtocolPropertyView.xaml.cs">
+      <DependentUpon>ProtocolPropertyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProtocolSet.xaml.cs">
+      <DependentUpon>ProtocolSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SafetyView.xaml.cs">
+      <DependentUpon>SafetyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SOEView.xaml.cs">
+      <DependentUpon>SOEView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TelecontrolView.xaml.cs">
+      <DependentUpon>TelecontrolView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TelemeteringView.xaml.cs">
+      <DependentUpon>TelemeteringView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TelesignalisationView.xaml.cs">
+      <DependentUpon>TelesignalisationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TimeView.xaml.cs">
+      <DependentUpon>TimeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WaitingDlg.xaml.cs">
+      <DependentUpon>WaitingDlg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WaitingDlgServer\ILongTimeTask.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Skins\MainSkin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\AboutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddNewConfigureLeafNode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChangeSoftwareVersionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChannelMonitorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CoefficientView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CombineTelesignalisationManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ConfigView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CommunicationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ComtradeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\COSView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DTUConfigurePointTableView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DTUConfigureView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\HistoryRecordView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\InherentParameterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ManageUsers\OneUserInfoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ManageUsers\SuperAdministratorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\OperationManualView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReadmeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TelecontrolPWView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ConnectionParametersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EnergyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\FaultEventView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\FileServiceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ParameterView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ProtocolPropertyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ProtocolSet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SafetyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SOEView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TelecontrolView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TelemeteringView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TelesignalisationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TimeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\WaitingDlg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd">
+      <SubType>Designer</SubType>
+    </None>
+    <Fakes Include="Fakes\OxyPlot.fakes" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FTU.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XML\TelecontrolPW.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Icon\LoginBackground.jpg" />
+    <Resource Include="Icon\密码.png" />
+    <Resource Include="Icon\用户.png" />
+    <Resource Include="Icon\角色管理.png" />
+    <Resource Include="loading.gif" />
+    <Resource Include="Icon\总召唤.png" />
+    <Resource Include="Icon\打开连接.png" />
+    <Resource Include="Icon\复位进程.png" />
+    <Resource Include="Icon\测试连接.png" />
+    <Resource Include="Icon\关闭连接.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XML\ChangeSoftwareVersionPW.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ONLLYSDKSample_VC_Net\Sojo.TestPlatform.ControlPlatform.csproj">
+      <Project>{30709b26-6955-4a81-950c-8daadf362512}</Project>
+      <Name>Sojo.TestPlatform.ControlPlatform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sojo.Checkplatform.libcollect\Sojo.Checkplatform.libcollect.csproj">
+      <Project>{6eb46a26-6518-4998-967f-4e6e0d5cbdde}</Project>
+      <Name>Sojo.Checkplatform.libcollect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sojo.TestPlatform.Common\Sojo.TestPlatform.Common.csproj">
+      <Project>{cfac307c-25b1-4c3c-8e21-e7734028d506}</Project>
+      <Name>Sojo.TestPlatform.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sojo.TestPlatform.PlatformModel\Sojo.TestPlatform.PlatformModel.csproj">
+      <Project>{200400e8-8391-4dd9-8ec7-399470a12625}</Project>
+      <Name>Sojo.TestPlatform.PlatformModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\packages\System.Data.SQLite.Core.1.0.110.0\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\..\packages\System.Data.SQLite.Core.1.0.110.0\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\System.Data.SQLite.Core.1.0.110.0\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\System.Data.SQLite.Core.1.0.110.0\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,438 @@
+﻿<Page x:Class="FTU.Monitor.View.ConfigView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+      xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
+      xmlns:local="clr-namespace:FTU.Monitor.Model.DTUConfigurePointTableModelCollection"
+      xmlns:localCheck ="clr-namespace:FTU.Monitor.CheckValueService"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="750"
+	Title="CommunicationView">
+
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border CornerRadius="3" BorderBrush="Red" BorderThickness="1">
+                            <StackPanel Orientation="Vertical">
+                                <AdornedElementPlaceholder x:Name="Adorned"></AdornedElementPlaceholder>
+                                <TextBlock Width="{TemplateBinding Width}" Foreground="Red">
+                                    <TextBlock.Text>
+                                        <Binding ElementName="Adorned" Path="AdornedElement.(Validation.Errors)[0].ErrorContent"></Binding>
+                                    </TextBlock.Text>
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect Opacity="0.6" ShadowDepth="3" Color="Black"/>
+                                    </TextBlock.Effect>
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Margin="10,0,10,0" ShowGridLines="False">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" MinHeight="50"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <GroupBox Grid.Column="4" Header="设备参数配置" Margin="1" Background="AliceBlue">
+                    <Grid DataContext="{Binding ConfigurationSetData}">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0" Content="设备ID:" />
+                        <TextBox Name="deviceID" Grid.Column="1" Grid.Row="0" MaxHeight="22" Text="{Binding DeviceID,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"/>
+
+                    </Grid>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Column="1">
+                <GroupBox Grid.Column="4" Header="终端信息上传" Margin="1"  Background="AliceBlue">
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0" Content="召唤终端点表:" />
+                        <Button Content="召唤终端点表" Grid.Column="1" Grid.Row="0" MaxHeight="22" Width="100" Command="{Binding ConfigReportCommand}" CommandParameter="CallTerminalPointTable"></Button>
+                        <Button  Content="配置本地" Grid.Column="1" MaxHeight="22" Margin="138.2,0,-88,0" Command="{Binding ConfigReportCommand}" CommandParameter="UpdateDatabase"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+
+            <!--
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1.15*"/>
+                <ColumnDefinition Width="1.35*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Grid.Column="0" Header="串口接口配置" Margin="1">
+                <Grid DataContext="{Binding ConfigurationSetData}">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1.15*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" Content="使用串口:" />
+                    <ComboBox Grid.Column="1" Grid.Row="0" MaxHeight="22" ItemsSource="{Binding UartPortItems}" SelectedIndex="{Binding UartPortIndex}"/>
+
+                    <Label Grid.Column="0" Grid.Row="1" Content="波特率:"/>
+                    <ComboBox Grid.Column="1" Grid.Row="1" MaxHeight="22" ItemsSource="{Binding UartBaudRateItems}" SelectedIndex="{Binding UartBaudRateIndex}"/>
+
+                    <Label Grid.Column="0" Grid.Row="2" Content="数据位:" />
+                    <ComboBox Grid.Column="1" Grid.Row="2" MaxHeight="22" ItemsSource="{Binding UartWordLengthItems}" SelectedIndex="{Binding UartWordLengthIndex}"/>
+
+                    <Label Grid.Column="0" Grid.Row="3" Content="停止位:"/>
+                    <ComboBox Grid.Column="1" Grid.Row="3" MaxHeight="22" ItemsSource="{Binding UartStopBitsItems}" SelectedIndex="{Binding UartStopBitsIndex}"/>
+
+                    <Label Grid.Column="0" Grid.Row="4" Content="校验位:"/>
+                    <ComboBox Grid.Column="1" Grid.Row="4" MaxHeight="22" ItemsSource="{Binding UartParityItems}" SelectedIndex="{Binding UartParityIndex}"/>
+
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Header="串口应用配置" Margin="1">
+                <Grid DataContext="{Binding ConfigurationSetData}">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" Content="模式:" />
+                    <ComboBox Grid.Column="1" Grid.Row="0" MaxHeight="22" ItemsSource="{Binding UartBalanModeItems}" SelectedIndex="{Binding UartBalanModeIndex}"/>
+
+                    <Label Grid.Column="0" Grid.Row="1" Content="从站地址:"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" MaxHeight="22" Text="{Binding UartSourceAddr}"/>
+
+                    <Label Grid.Column="0" Grid.Row="2" Content="从站地址长度:" />
+                    <ComboBox Grid.Column="1" Grid.Row="2" MaxHeight="22" ItemsSource="{Binding UartLinkAddrSizeItems}" SelectedIndex="{Binding UartLinkAddrSizeIndex}" />
+
+                    <Label Grid.Column="0" Grid.Row="3" Content="传送原因长度:"/>
+                    <ComboBox Grid.Column="1" Grid.Row="3" MaxHeight="22" ItemsSource="{Binding UartASDUCotSizeItems}" SelectedIndex="{Binding UartASDUCotSizeIndex}"/>
+
+                    <Label Grid.Column="0" Grid.Row="4" Content="ASDU地址:"/>
+                    <TextBox Grid.Column="1" Grid.Row="4" MaxHeight="22" Text="{Binding UartASDUAddr}"/>
+
+                    <Label Grid.Column="0" Grid.Row="5" Content="ASDU地址长度:"/>
+                    <ComboBox Grid.Column="1" Grid.Row="5" MaxHeight="22" ItemsSource="{Binding UartASDUAddrSizeItems}" SelectedIndex="{Binding UartASDUAddrSizeIndex}"/>
+
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="2" Header="网口接口配置" Margin="1">
+                <Grid DataContext="{Binding ConfigurationSetData}">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" Content="IP地址1:" />
+                    <DockPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left">
+                        <TextBox MaxHeight="22" Width="32" Text="{Binding NetIPOne[0]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetIPOne[1]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetIPOne[2]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetIPOne[3]}"/>
+                    </DockPanel>
+
+                    <Label Grid.Column="0" Grid.Row="1" Content="IP地址2:" />
+                    <DockPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">
+                        <TextBox MaxHeight="22" Width="32" Text="{Binding NetIPTwo[0]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetIPTwo[1]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetIPTwo[2]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetIPTwo[3]}"/>
+                    </DockPanel>
+
+                    <Label Grid.Column="0" Grid.Row="2" Content="子网掩码:"/>
+                    <DockPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left">
+                        <TextBox MaxHeight="22" Width="32" Text="{Binding NetNetmask[0]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetNetmask[1]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetNetmask[2]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetNetmask[3]}"/>
+                    </DockPanel>
+
+                    <Label Grid.Column="0" Grid.Row="3" Content="网关:" />
+                    <DockPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">
+                        <TextBox MaxHeight="22" Width="32" Text="{Binding NetGateway[0]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetGateway[1]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetGateway[2]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetGateway[3]}"/>
+                    </DockPanel>
+
+                    <Label Grid.Column="0" Grid.Row="4" Content="DNS:"/>
+                    <DockPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left">
+                        <TextBox MaxHeight="22" Width="32" Text="{Binding NetDNS[0]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetDNS[1]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetDNS[2]}"/>
+                        <TextBox Margin="3,0,0,0" MaxHeight="22" Width="32" Text="{Binding NetDNS[3]}"/>
+                    </DockPanel>
+
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="3" Header="网口应用配置" Margin="1">
+                <Grid DataContext="{Binding ConfigurationSetData}">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" Content="从站地址:" />
+                    <TextBox Grid.Column="1" Grid.Row="0" MaxHeight="22" Text="{Binding NetSourceAddr}"/>
+
+                    <Label Grid.Column="0" Grid.Row="1" Content="ASDU地址:"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" MaxHeight="22" Text="{Binding NetASDUAddr}"/>
+
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="4" Header="设备参数配置" Margin="1">
+                <Grid DataContext="{Binding ConfigurationSetData}">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2.8*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" Content="设备ID:" />
+                    <TextBox Grid.Column="1" Grid.Row="0" MaxHeight="22" Text="{Binding DeviceID}"/>
+
+                </Grid>
+            </GroupBox>
+        -->
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,5,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.6*"/>
+                <ColumnDefinition Width="1.6*"/>
+                <ColumnDefinition Width="1.6*"/>
+                <ColumnDefinition Width="0.7*"/>
+            </Grid.ColumnDefinitions>
+
+            <avalonDock:DockingManager x:Name="DockManager" AllowMixedOrientation="True" Grid.Column="0"  Grid.ColumnSpan="3" >
+                <avalonDock:LayoutRoot>
+                    <avalonDock:LayoutPanel Orientation="Vertical">
+                        <avalonDock:LayoutDocumentPaneGroup>
+                            <avalonDock:LayoutDocumentPane>
+                                <avalonDock:LayoutDocument CanClose="False" ContentId="document1" Title="遥信点号">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1.5*"/>
+                                            <ColumnDefinition Width="40"/>
+                                            <ColumnDefinition Width="1.5*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <DataGrid x:Name="YXGridModel" SelectedIndex="{Binding GridIndex[0]}" Margin="5,5,45,5" Grid.Column="0" ItemsSource="{Binding TelesignalisationPointModel}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" Grid.ColumnSpan="2">
+                                            <DataGrid.Columns >
+                                                <DataGridTextColumn Header="序号" Width="0.5*" Binding="{Binding Number}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="名称" Width="*" Binding="{Binding Name}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="点号" Width="0.5*" Binding="{Binding ID, StringFormat={}{0:X4}}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="备注" Width="2*" Binding="{Binding Comment}" IsReadOnly="True" ></DataGridTextColumn>
+                                            </DataGrid.Columns>
+                                        </DataGrid>
+                                        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                            <Button Content="＞＞" FontSize="14" Margin="0,0,0,10" Command="{Binding ConfigCommand}" CommandParameter="YXOKCommand" />
+                                            <Button Content="上移↑" FontSize="14" Margin="0,0,0,10" Command="{Binding ConfigCommand}" CommandParameter="YXUpCommand" />
+                                            <Button Content="空行" FontSize="14" Margin="0,0,0,0" Command="{Binding ConfigCommand}" CommandParameter="YXBlankCommand" />
+                                            <Button Content="下移↓" FontSize="14" Margin="0,10,0,0" Command="{Binding ConfigCommand}" CommandParameter="YXDownCommand" />
+                                            <Button Content="＜＜" FontSize="14" Margin="0,10,0,0" Command="{Binding ConfigCommand}" CommandParameter="YXCancelCommand" />
+                                        </StackPanel>
+                                        <DataGrid  x:Name="YXTable" Margin="5" Grid.Column="2" SelectedIndex="{Binding GridIndex[1]}" ItemsSource="{Binding TelesignalisationPoint}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" LoadingRow="YXTable_AddLine">
+                                            <DataGrid.Columns >
+                                                <DataGridTextColumn Header="序号" Width="0.5*" Binding="{Binding Number}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="名称" Width="1.2*" Binding="{Binding Name}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="点号" Width="0.8*" Binding="{Binding ID, StringFormat={}{0:X4}}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridCheckBoxColumn Header="变化" Width="*" Binding="{Binding IsChanged,Mode=TwoWay}" ></DataGridCheckBoxColumn>
+                                                <DataGridCheckBoxColumn Header="SOE" Width="*" Binding="{Binding IsSOE,Mode=TwoWay}" ></DataGridCheckBoxColumn>
+                                                <DataGridCheckBoxColumn Header="取反" Width="*" Binding ="{Binding IsNegated,Mode=TwoWay}" ></DataGridCheckBoxColumn>
+                                                <DataGridCheckBoxColumn Header="双点" Width="*" Binding="{Binding DoublePoint,Mode=TwoWay}" ></DataGridCheckBoxColumn>
+                                            </DataGrid.Columns>
+                                        </DataGrid>
+                                    </Grid>
+                                </avalonDock:LayoutDocument>
+                                <avalonDock:LayoutDocument CanClose="False" ContentId="document2" Title="遥测点号" >
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition Height="25"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1.5*"/>
+                                                <ColumnDefinition Width="40"/>
+                                                <ColumnDefinition Width="1.5*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <DataGrid Margin="5" Grid.Column="0" SelectedIndex="{Binding GridIndex[2]}" ItemsSource="{Binding TelemeteringPointModel}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" >
+                                                <DataGrid.Columns >
+                                                    <DataGridTextColumn Header="序号" Width="0.7*" Binding="{Binding Number}" />
+                                                    <DataGridTextColumn Header="名称" Width="2*" Binding="{Binding Name}"/>
+                                                    <DataGridTextColumn Header="点号" Width="1.5*" Binding="{Binding ID,StringFormat={}{0:X4}}" />
+                                                    <DataGridTextColumn Header="单位" Width="*" Binding="{Binding Unit}" />
+                                                    <DataGridTextColumn Header="系数" Width="*" Binding="{Binding Rate,StringFormat={}{0:F3}}" />
+                                                </DataGrid.Columns>
+                                            </DataGrid>
+                                            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                                <Button Content="＞＞" FontSize="14" Margin="0,0,0,10" Command="{Binding ConfigCommand}" CommandParameter="YCOKCommand" />
+                                                <Button Content="上移↑" FontSize="14" Margin="0,0,0,10" Command="{Binding ConfigCommand}" CommandParameter="YCUpCommand" />
+                                                <Button Content="空行" FontSize="14" Margin="0,0,0,0" Command="{Binding ConfigCommand}" CommandParameter="YCBlankCommand" />
+                                                <Button Content="下移↓" FontSize="14" Margin="0,10,0,0" Command="{Binding ConfigCommand}" CommandParameter="YCDownCommand" />
+                                                <Button Content="＜＜" FontSize="14" Margin="0,10,0,0" Command="{Binding ConfigCommand}" CommandParameter="YCCancelCommand" />
+                                            </StackPanel>
+                                            <DataGrid  x:Name="YCTable" Margin="5" Grid.Column="2" SelectedIndex="{Binding GridIndex[3]}" ItemsSource="{Binding TelemeteringPoint}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" LoadingRow="YCTable_AddLine">
+                                                <DataGrid.Columns >
+                                                    <DataGridTextColumn Header="序号" Width="0.7*" Binding="{Binding Number}" />
+                                                    <DataGridTextColumn Header="名称" Width="2*" Binding="{Binding Name}" />
+                                                    <DataGridTextColumn Header="点号" Width="1.5*" Binding="{Binding ID,StringFormat={}{0:X4}}" />
+                                                    <DataGridTextColumn Header="单位" Width="*" Binding="{Binding Unit}" />
+                                                    <DataGridTextColumn Header="数据类型" Width="*" Binding="{Binding DataType}"/>
+                                                    <DataGridTextColumn Header="系数" Width="*" Binding="{Binding Rate ,StringFormat={}{0:F3}}" />
+                                                </DataGrid.Columns>
+                                            </DataGrid>
+                                        </Grid>
+                                        <Grid Grid.Row="1">
+                                            <Label Content="说明：数据类型列，0代表归一化值（9），1代表标度化值（11），2代表短浮点数值（13）。归一化值倍率需大于最大实际值。"></Label>
+                                        </Grid>
+                                    </Grid>
+                                </avalonDock:LayoutDocument>
+                                <avalonDock:LayoutDocument CanClose="False" ContentId="document3" Title="遥控点号" >
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1.5*"/>
+                                            <ColumnDefinition Width="40"/>
+                                            <ColumnDefinition Width="1.5*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <DataGrid Margin="5" Grid.Column="0" SelectedIndex="{Binding GridIndex[4]}" ItemsSource="{Binding TelecontrolPointModel}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" >
+                                            <DataGrid.Columns >
+                                                <DataGridTextColumn Header="序号" Width="*" Binding="{Binding Number}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="点号" Width="1.5*" Binding="{Binding YKID,StringFormat={}{0:X2}}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="名称" Width="2*" Binding="{Binding YKName}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="备注" Width="2*" Binding="{Binding YKRemark}" IsReadOnly="True" ></DataGridTextColumn>
+                                            </DataGrid.Columns>
+                                        </DataGrid>
+                                        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                            <Button Content="＞＞" FontSize="14" Margin="0,0,0,10" Command="{Binding ConfigCommand}" CommandParameter="YKOKCommand" />
+                                            <Button Content="上移↑" FontSize="14" Margin="0,0,0,10" Command="{Binding ConfigCommand}" CommandParameter="YKUpCommand" />
+                                            <Button Content="空行" FontSize="14" Margin="0,0,0,0" Command="{Binding ConfigCommand}" CommandParameter="YKBlankCommand" />
+                                            <Button Content="下移↓" FontSize="14" Margin="0,10,0,0" Command="{Binding ConfigCommand}" CommandParameter="YKDownCommand" />
+                                            <Button Content="＜＜" FontSize="14" Margin="0,10,0,0" Command="{Binding ConfigCommand}" CommandParameter="YKCancelCommand" />
+                                        </StackPanel>
+                                        <DataGrid x:Name="YKTable" Margin="5" Grid.Column="2" SelectedIndex="{Binding GridIndex[5]}" ItemsSource="{Binding TelecontrolPoint}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" LoadingRow="YKTable_AddLine">
+                                            <DataGrid.Columns >
+                                                <DataGridTextColumn Header="序号" Width="*" Binding="{Binding Number}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="点号" Width="1.5*" Binding="{Binding YKID,StringFormat={}{0:X2}}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridTextColumn Header="名称" Width="2*" Binding="{Binding YKName}" IsReadOnly="True" ></DataGridTextColumn>
+                                                <DataGridCheckBoxColumn Header="取反" Width="2*" Binding="{Binding IsNegated,Mode=TwoWay}" ></DataGridCheckBoxColumn>
+                                            </DataGrid.Columns>
+                                        </DataGrid>
+                                    </Grid>
+                                </avalonDock:LayoutDocument>
+                            </avalonDock:LayoutDocumentPane>
+                        </avalonDock:LayoutDocumentPaneGroup>
+                    </avalonDock:LayoutPanel>
+                </avalonDock:LayoutRoot>
+
+            </avalonDock:DockingManager>
+
+            <Grid Grid.Column="4" Margin="3,21,0,0" Background="#FFF0F0F0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="1.5*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.ColumnSpan="2" Margin="1" MaxHeight="30" MaxWidth="100" Content="从本地读三遥" Command="{Binding ConfigReportCommand}" CommandParameter="FromLocal" ></Button>
+                <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="1" MaxHeight="30" MaxWidth="100" Content="三遥导出本地" Command="{Binding ConfigReportCommand}" CommandParameter="ToLocal" ></Button>
+                <Button Grid.Row="2" Grid.ColumnSpan="2" Margin="1" MaxHeight="30" MaxWidth="100" Content="下发三遥配置" Command="{Binding ConfigReportCommand}" CommandParameter="Down" ></Button>
+                <Button Grid.Row="3" Grid.ColumnSpan="2" Margin="1" MaxHeight="30" MaxWidth="100" Content="复位进程" Command="{Binding ConfigReportCommand}" CommandParameter="ResetProcess" ></Button>
+                <Button Grid.Row="4" Grid.ColumnSpan="2" Margin="1" MaxHeight="30" MaxWidth="100" Content="上载三遥配置" Command="{Binding ConfigReportCommand}" CommandParameter="Upload" ></Button>
+                <Button Grid.Row="5" Grid.ColumnSpan="2" Margin="1" MaxHeight="30" MaxWidth="100" Content="配置本地三遥" Command="{Binding ConfigReportCommand}" CommandParameter="LocalConfig" ></Button>
+                <Button Grid.Row="6" Grid.ColumnSpan="2" Margin="1" Height="22" Width="60" HorizontalAlignment="Right" Content="全部选中" Command="{Binding AllSelectedCommand}" ></Button>
+                <Button Grid.Row="7" Grid.ColumnSpan="2" Margin="1" Height="22" Width="60" HorizontalAlignment="Right" Content="恢复默认" Command="{Binding RecoveryCommand}" ></Button>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Page>

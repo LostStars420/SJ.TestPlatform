@@ -1,0 +1,68 @@
+﻿<Window x:Class="FTU.Monitor.View.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:pw="clr-namespace:FTU.Monitor.ViewModel"
+        Title=" " Height="800" Width="1000"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        DataContext="{Binding Source={StaticResource Locator}, Path= Login}" Closing="LoginCancel">
+
+    <Window.Background>
+        <ImageBrush ImageSource="../Icon/LoginBackground.jpg"></ImageBrush>
+    </Window.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="欢迎进入配电终端维护系统" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"  FontSize="50" FontFamily="Times New Roman,黑体"></Label>
+        <Grid Grid.Row="1">
+            <Border Height="140" Width="400" BorderBrush="#FFA3CDE6" Background="Transparent" BorderThickness="3" CornerRadius="20,20,20,20">
+                <Border.Effect>
+                    <DropShadowEffect Color="Transparent" BlurRadius="10"></DropShadowEffect>
+                </Border.Effect>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="4*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Margin="3,3,3,3">
+                        <StackPanel>
+                            <Image Source="..\Icon\用户.png"></Image>
+                        </StackPanel>
+                    </Label>
+                    <TextBox Grid.Row="0" Grid.Column="1" Margin="3,10,3,0" Background="Transparent" VerticalContentAlignment="Center" FontSize="16" Text="{Binding InputUserName}"></TextBox>
+                    <Label Grid.Row="1" Grid.Column="0" Margin="3,3,3,3">
+                        <StackPanel>
+                            <Image Source="..\Icon\角色管理.png"></Image>
+                        </StackPanel>
+                    </Label>
+                    <TextBox Grid.Row="1" Grid.Column="1"  Margin="3,10,3,0" Background="Transparent"></TextBox>
+                    <ComboBox Grid.Row="1" Grid.Column="1" Margin="3,10,3,0" VerticalContentAlignment="Center" FontSize="16" Opacity="1" ItemsSource="{Binding InputRoleNameList}" SelectedIndex="{Binding InputRoleNameIndex}">
+                        <ComboBox.Resources>
+                            <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="AliceBlue"></SolidColorBrush>
+                        </ComboBox.Resources>
+                    </ComboBox>
+                    <Label Grid.Row="2" Grid.Column="0" Margin="3,3,3,3">
+                        <StackPanel>
+                            <Image Source="..\Icon\密码.png"></Image>
+                        </StackPanel>
+                    </Label>
+                    <!--<TextBox Grid.Row="2" Grid.Column="1" Margin="3,10,3,0" Background="Transparent" VerticalContentAlignment="Center" FontSize="16" Text="{Binding InputPassword}" ></TextBox>-->
+                    <PasswordBox Grid.Row="2" Grid.Column="1" Margin="3,10,3,0" Background="Transparent" VerticalContentAlignment="Center" FontSize="16"  pw:PasswordBoxHelper.Attach="True"  pw:PasswordBoxHelper.Password="{Binding InputPassword,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                    <Button Grid.RowSpan="3" Grid.Column="2" Width="80" Height="80" FontSize="20" Background="Transparent" 
+                            Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" 
+                            Content="登陆" Command="{Binding ClickLoginBtn}" CommandParameter="Login"></Button>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Grid>
+</Window>

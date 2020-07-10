@@ -1,0 +1,12 @@
+E:\FTU.Monitor\Sojo.Checkplatform.libcollect\bin\Debug\Sojo.Checkplatform.libcollect.dll
+E:\FTU.Monitor\Sojo.Checkplatform.libcollect\bin\Debug\Sojo.Checkplatform.libcollect.pdb
+E:\FTU.Monitor\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.csproj.CoreCompileInputs.cache
+E:\FTU.Monitor\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.dll
+E:\FTU.Monitor\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.pdb
+E:\FTU.Monitor\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.csprojAssemblyReference.cache
+F:\5-10ftu\FTU.Monitor\Sojo.Checkplatform.libcollect\bin\Debug\Sojo.Checkplatform.libcollect.dll
+F:\5-10ftu\FTU.Monitor\Sojo.Checkplatform.libcollect\bin\Debug\Sojo.Checkplatform.libcollect.pdb
+F:\5-10ftu\FTU.Monitor\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.csprojAssemblyReference.cache
+F:\5-10ftu\FTU.Monitor\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.csproj.CoreCompileInputs.cache
+F:\5-10ftu\FTU.Monitor\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.dll
+F:\5-10ftu\FTU.Monitor\Sojo.Checkplatform.libcollect\obj\Debug\Sojo.Checkplatform.libcollect.pdb

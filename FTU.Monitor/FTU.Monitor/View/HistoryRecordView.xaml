@@ -1,0 +1,157 @@
+﻿<Page x:Class="FTU.Monitor.View.HistoryRecordView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+	Title="HistoryRecordView">
+
+    <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <Button Content="选择历史文件" Command="{Binding HistoryRecordCommand}" Height="25" Width="100" HorizontalAlignment="Left" Margin="5" >
+            </Button>
+        </StackPanel>
+
+        <TabControl Grid.Row="1" Margin="0,5,0,0" Background="#FFF0F0F0" >
+            <TabItem Header="历史文件信息">
+                <TextBlock Text="{Binding FileInfo}" >
+                </TextBlock>
+            </TabItem>
+
+            <TabItem Header="SOE历史信息">
+                <Grid>
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="6*">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <GroupBox Header="SOE历史文件基本信息" Grid.Row="0" Margin="3">
+                        <StackPanel Orientation="Horizontal" DataContext="{Binding SOEHistoryRecordFileInfo}">
+                            <Label Content="文件类型：" Height="25"/>
+                            <TextBox Text="{Binding FileType}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="文件版本：" Height="25" />
+                            <TextBox Text="{Binding FileVersion}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="终端名称：" Height="25" />
+                            <TextBox Text="{Binding DevName}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="记录个数：" Height="25" />
+                            <TextBox Text="{Binding RecordCounts}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Header="SOE历史记录" Grid.Row="1" Margin="3">
+                        <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding SOEHistoryRecordList}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="序号" Width="40" Binding="{Binding Number}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="名称" Width="100" Binding="{Binding Name}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="点号" Width="80" Binding="{Binding IOA,StringFormat={}{0:X4}}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="时标" Width="150" Binding="{Binding TM}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="值" Width="80" Binding="{Binding Val}" IsReadOnly="True" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </GroupBox>
+                    
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="CO操作历史信息">
+                <Grid>
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="6*">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <GroupBox Header="CO操作历史文件基本信息" Grid.Row="0" Margin="3">
+                        <StackPanel Orientation="Horizontal" DataContext="{Binding COHistoryRecordFileInfo}">
+                            <Label Content="文件类型：" Height="25"/>
+                            <TextBox Text="{Binding FileType}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="文件版本：" Height="25" />
+                            <TextBox Text="{Binding FileVersion}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="终端名称：" Height="25" />
+                            <TextBox Text="{Binding DevName}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="记录个数：" Height="25" />
+                            <TextBox Text="{Binding RecordCounts}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Header="CO操作历史记录" Grid.Row="1" Margin="3">
+                        <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding COHistoryRecordList}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="序号" Width="40" Binding="{Binding Number}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="名称" Width="100" Binding="{Binding Name}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="点号" Width="80" Binding="{Binding IOA,StringFormat={}{0:X4}}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="时标" Width="150" Binding="{Binding TM}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="操作命令" Width="120" Binding="{Binding CMD}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="值" Width="80" Binding="{Binding Val}" IsReadOnly="True" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </GroupBox>
+                    
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="故障事件历史信息">
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="6*">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <GroupBox Header="故障事件历史文件基本信息" Grid.Row="0" Margin="3">
+                        <StackPanel Orientation="Horizontal" DataContext="{Binding FaultEventHistoryRecordFileInfo}">
+                            <Label Content="文件类型：" Height="25"/>
+                            <TextBox Text="{Binding FileType}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="文件版本：" Height="25" />
+                            <TextBox Text="{Binding FileVersion}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="终端名称：" Height="25" />
+                            <TextBox Text="{Binding DevName}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+
+                            <Label Content="记录个数：" Height="25" />
+                            <TextBox Text="{Binding RecordCounts}" IsReadOnly="True" Height="20" Width="80" Margin="0,3,30,3" ></TextBox>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Header="故障事件历史记录" Grid.Row="1" Margin="3">
+                        <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding FaultEventHistoryRecordList}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="序号" Width="40" Binding="{Binding Number}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="名称" Width="100" Binding="{Binding Name}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="点号" Width="80" Binding="{Binding IOA,StringFormat={}{0:X4}}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="时标" Width="150" Binding="{Binding TM}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="操作命令" Width="120" Binding="{Binding CMD}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="值" Width="80" Binding="{Binding Val}" IsReadOnly="True" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </GroupBox>
+
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Page>
